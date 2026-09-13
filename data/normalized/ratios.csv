@@ -1,0 +1,541 @@
+ticker,cik,cal_year,fiscal_period_end,ratio_category,ratio_name,value,value_formatted,data_quality,quality_note
+AFRM,0001820953,2021,2021-06-30,efficiency,asset_turnover,0.17885142841527382,0.18x,COMPARATIVE,revenue: $870.5M (COMPARATIVE) / assets: $4.87B (COMPARATIVE)
+AFRM,0001820953,2021,2021-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2021,2021-06-30,leverage,debt_to_equity,0.45686688588393753,0.46x,RESTATED|FALLBACK,total_debt: $1.18B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $2.58B (RESTATED)
+AFRM,0001820953,2021,2021-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2021,2021-06-30,leverage,interest_coverage,-7.2802087286527515,-7.28x,RESTATED|FALLBACK,ebit: -$383.7M (RESTATED) / interest_expense: $52.7M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2021,2021-06-30,profitability,net_margin,-0.50665736894346,-50.67%,RESTATED,net_income: -$441.0M (RESTATED) / revenue: $870.5M (COMPARATIVE)
+AFRM,0001820953,2021,2021-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2021,2021-06-30,efficiency,receivables_turnover,0.4570420464569244,0.46x,FALLBACK,revenue: $870.5M (COMPARATIVE) / receivables: $1.90B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2021,2021-06-30,profitability,roa,-0.09061639415266222,-9.06%,RESTATED,net_income: -$441.0M (RESTATED) / assets: $4.87B (COMPARATIVE)
+AFRM,0001820953,2021,2021-06-30,profitability,roe,-0.1712375758437011,-17.12%,RESTATED,net_income: -$441.0M (RESTATED) / equity: $2.58B (RESTATED)
+AFRM,0001820953,2022,2022-06-30,efficiency,asset_turnover,0.1934803905823403,0.19x,COMPARATIVE,revenue: $1.35B (COMPARATIVE) / assets: $6.97B (COMPARATIVE)
+AFRM,0001820953,2022,2022-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2022,2022-06-30,leverage,debt_to_equity,0.6216277635295263,0.62x,FALLBACK,total_debt: $1.63B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $2.62B (COMPARATIVE)
+AFRM,0001820953,2022,2022-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2022,2022-06-30,leverage,interest_coverage,-12.42643556116739,-12.43x,FALLBACK,ebit: -$866.0M (COMPARATIVE) / interest_expense: $69.7M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2022,2022-06-30,profitability,net_margin,-0.5242875522866807,-52.43%,COMPARATIVE,net_income: -$707.4M (COMPARATIVE) / revenue: $1.35B (COMPARATIVE)
+AFRM,0001820953,2022,2022-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2022,2022-06-30,efficiency,receivables_turnover,0.5746145188016706,0.57x,FALLBACK,revenue: $1.35B (COMPARATIVE) / receivables: $2.35B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2022,2022-06-30,profitability,roa,-0.10143936039388614,-10.14%,COMPARATIVE,net_income: -$707.4M (COMPARATIVE) / assets: $6.97B (COMPARATIVE)
+AFRM,0001820953,2022,2022-06-30,profitability,roe,-0.2701864409692715,-27.02%,COMPARATIVE,net_income: -$707.4M (COMPARATIVE) / equity: $2.62B (COMPARATIVE)
+AFRM,0001820953,2023,2023-06-30,efficiency,asset_turnover,0.19471063800829244,0.19x,COMPARATIVE,revenue: $1.59B (COMPARATIVE) / assets: $8.16B (COMPARATIVE)
+AFRM,0001820953,2023,2023-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2023,2023-06-30,leverage,debt_to_equity,0.8545464159454941,0.85x,FALLBACK,total_debt: $2.17B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $2.53B (COMPARATIVE)
+AFRM,0001820953,2023,2023-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2023,2023-06-30,leverage,interest_coverage,-6.561621305590314,-6.56x,FALLBACK,ebit: -$1.20B (COMPARATIVE) / interest_expense: $183.0M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2023,2023-06-30,profitability,net_margin,-0.6205001936416276,-62.05%,COMPARATIVE,net_income: -$985.3M (COMPARATIVE) / revenue: $1.59B (COMPARATIVE)
+AFRM,0001820953,2023,2023-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2023,2023-06-30,efficiency,receivables_turnover,0.3782329636952471,0.38x,FALLBACK,revenue: $1.59B (COMPARATIVE) / receivables: $4.20B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2023,2023-06-30,profitability,roa,-0.12081798858823031,-12.08%,COMPARATIVE,net_income: -$985.3M (COMPARATIVE) / assets: $8.16B (COMPARATIVE)
+AFRM,0001820953,2023,2023-06-30,profitability,roe,-0.3888215649777463,-38.88%,COMPARATIVE,net_income: -$985.3M (COMPARATIVE) / equity: $2.53B (COMPARATIVE)
+AFRM,0001820953,2024,2024-06-30,efficiency,asset_turnover,0.24402226601715887,0.24x,COMPARATIVE,revenue: $2.32B (COMPARATIVE) / assets: $9.52B (COMPARATIVE)
+AFRM,0001820953,2024,2024-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2024,2024-06-30,leverage,debt_to_equity,0.6723705695740356,0.67x,OK,total_debt: $1.84B (OK) / equity: $2.73B (COMPARATIVE)
+AFRM,0001820953,2024,2024-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2024,2024-06-30,leverage,interest_coverage,-1.7889372060664686,-1.79x,FALLBACK,ebit: -$615.8M (COMPARATIVE) / interest_expense: $344.3M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2024,2024-06-30,profitability,net_margin,-0.2228830059763263,-22.29%,COMPARATIVE,net_income: -$517.8M (COMPARATIVE) / revenue: $2.32B (COMPARATIVE)
+AFRM,0001820953,2024,2024-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2024,2024-06-30,efficiency,receivables_turnover,0.43331780750421706,0.43x,FALLBACK,revenue: $2.32B (COMPARATIVE) / receivables: $5.36B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2024,2024-06-30,profitability,roa,-0.05438841617505911,-5.44%,COMPARATIVE,net_income: -$517.8M (COMPARATIVE) / assets: $9.52B (COMPARATIVE)
+AFRM,0001820953,2024,2024-06-30,profitability,roe,-0.18951650244565407,-18.95%,COMPARATIVE,net_income: -$517.8M (COMPARATIVE) / equity: $2.73B (COMPARATIVE)
+AFRM,0001820953,2025,2025-06-30,efficiency,asset_turnover,0.2890571513274535,0.29x,COMPARATIVE,revenue: $3.22B (COMPARATIVE) / assets: $11.15B (COMPARATIVE)
+AFRM,0001820953,2025,2025-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2025,2025-06-30,leverage,debt_to_equity,2.4795179812115244,2.48x,OK,total_debt: $7.61B (OK) / equity: $3.07B (COMPARATIVE)
+AFRM,0001820953,2025,2025-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2025,2025-06-30,leverage,interest_coverage,-0.20513055557514262,-0.21x,FALLBACK,ebit: -$87.3M (COMPARATIVE) / interest_expense: $425.5M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2025,2025-06-30,profitability,net_margin,0.01618465630322676,1.62%,COMPARATIVE,net_income: $52.2M (COMPARATIVE) / revenue: $3.22B (COMPARATIVE)
+AFRM,0001820953,2025,2025-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2025,2025-06-30,efficiency,receivables_turnover,0.48643892848662296,0.49x,FALLBACK,revenue: $3.22B (COMPARATIVE) / receivables: $6.63B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2025,2025-06-30,profitability,roa,0.004678290646224642,0.47%,COMPARATIVE,net_income: $52.2M (COMPARATIVE) / assets: $11.15B (COMPARATIVE)
+AFRM,0001820953,2025,2025-06-30,profitability,roe,0.017004186041813498,1.70%,COMPARATIVE,net_income: $52.2M (COMPARATIVE) / equity: $3.07B (COMPARATIVE)
+AFRM,0001820953,2026,2026-06-30,efficiency,asset_turnover,0.2698570019736357,0.27x,OK,revenue: $4.26B (OK) / assets: $15.79B (OK)
+AFRM,0001820953,2026,2026-06-30,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2026,2026-06-30,leverage,debt_to_equity,1.7859905788369577,1.79x,OK,total_debt: $9.79B (OK) / equity: $5.48B (OK)
+AFRM,0001820953,2026,2026-06-30,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+AFRM,0001820953,2026,2026-06-30,leverage,interest_coverage,0.9184191746546377,0.92x,FALLBACK,ebit: $417.0M (OK) / interest_expense: $454.0M (FALLBACK_InterestExpenseDebt)
+AFRM,0001820953,2026,2026-06-30,profitability,net_margin,0.4528880223379883,45.29%,OK,net_income: $1.93B (OK) / revenue: $4.26B (OK)
+AFRM,0001820953,2026,2026-06-30,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+AFRM,0001820953,2026,2026-06-30,efficiency,receivables_turnover,0.4735878966555735,0.47x,FALLBACK,revenue: $4.26B (OK) / receivables: $9.00B (FALLBACK_NotesReceivableNet)
+AFRM,0001820953,2026,2026-06-30,profitability,roa,0.1222150039378985,12.22%,OK,net_income: $1.93B (OK) / assets: $15.79B (OK)
+AFRM,0001820953,2026,2026-06-30,profitability,roe,0.35190644338695043,35.19%,OK,net_income: $1.93B (OK) / equity: $5.48B (OK)
+ENVA,0001529864,2021,2021-12-31,efficiency,asset_turnover,0.437421486932927,0.44x,COMPARATIVE,revenue: $1.21B (COMPARATIVE) / assets: $2.76B (COMPARATIVE)
+ENVA,0001529864,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2021,2021-12-31,leverage,debt_to_equity,1.2665445010850354,1.27x,COMPARATIVE,total_debt: $1.38B (COMPARATIVE) / equity: $1.09B (COMPARATIVE)
+ENVA,0001529864,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2021,2021-12-31,leverage,interest_coverage,5.398881177377825,5.40x,COMPARATIVE,ebit: $413.1M (COMPARATIVE) / interest_expense: $76.5M (COMPARATIVE)
+ENVA,0001529864,2021,2021-12-31,profitability,net_margin,0.21217667881966865,21.22%,COMPARATIVE,net_income: $256.3M (COMPARATIVE) / revenue: $1.21B (COMPARATIVE)
+ENVA,0001529864,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2021,2021-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2021,2021-12-31,profitability,roa,0.09281063834178954,9.28%,COMPARATIVE,net_income: $256.3M (COMPARATIVE) / assets: $2.76B (COMPARATIVE)
+ENVA,0001529864,2021,2021-12-31,profitability,roe,0.23447649334157936,23.45%,COMPARATIVE,net_income: $256.3M (COMPARATIVE) / equity: $1.09B (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,efficiency,asset_turnover,0.4591737551671049,0.46x,COMPARATIVE,revenue: $1.74B (COMPARATIVE) / assets: $3.78B (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2022,2022-12-31,leverage,debt_to_equity,1.9042022686939624,1.90x,COMPARATIVE,total_debt: $2.26B (COMPARATIVE) / equity: $1.19B (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2022,2022-12-31,leverage,interest_coverage,3.3135036716801713,3.31x,COMPARATIVE,ebit: $384.0M (COMPARATIVE) / interest_expense: $115.9M (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,profitability,net_margin,0.11947802094943508,11.95%,COMPARATIVE,net_income: $207.4M (COMPARATIVE) / revenue: $1.74B (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2022,2022-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2022,2022-12-31,profitability,roa,0.05486117153928613,5.49%,COMPARATIVE,net_income: $207.4M (COMPARATIVE) / assets: $3.78B (COMPARATIVE)
+ENVA,0001529864,2022,2022-12-31,profitability,roe,0.17487238069544617,17.49%,COMPARATIVE,net_income: $207.4M (COMPARATIVE) / equity: $1.19B (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,efficiency,asset_turnover,0.4618083905567419,0.46x,COMPARATIVE,revenue: $2.12B (COMPARATIVE) / assets: $4.59B (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2023,2023-12-31,leverage,debt_to_equity,2.3736859802142103,2.37x,COMPARATIVE,total_debt: $2.94B (COMPARATIVE) / equity: $1.24B (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2023,2023-12-31,leverage,interest_coverage,2.167251089696528,2.17x,COMPARATIVE,ebit: $422.1M (COMPARATIVE) / interest_expense: $194.8M (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,profitability,net_margin,0.08269634248330333,8.27%,COMPARATIVE,net_income: $175.1M (COMPARATIVE) / revenue: $2.12B (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2023,2023-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2023,2023-12-31,profitability,roa,0.038189864827143434,3.82%,COMPARATIVE,net_income: $175.1M (COMPARATIVE) / assets: $4.59B (COMPARATIVE)
+ENVA,0001529864,2023,2023-12-31,profitability,roe,0.14120577366404796,14.12%,COMPARATIVE,net_income: $175.1M (COMPARATIVE) / equity: $1.24B (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,efficiency,asset_turnover,0.5046969017671608,0.50x,COMPARATIVE,revenue: $2.66B (COMPARATIVE) / assets: $5.27B (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2024,2024-12-31,leverage,debt_to_equity,2.977199889048929,2.98x,COMPARATIVE,total_debt: $3.56B (COMPARATIVE) / equity: $1.20B (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2024,2024-12-31,leverage,interest_coverage,2.013338291293959,2.01x,COMPARATIVE,ebit: $584.8M (COMPARATIVE) / interest_expense: $290.4M (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,profitability,net_margin,0.07880502671382346,7.88%,COMPARATIVE,net_income: $209.4M (COMPARATIVE) / revenue: $2.66B (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2024,2024-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2024,2024-12-31,profitability,roa,0.03977265282614504,3.98%,COMPARATIVE,net_income: $209.4M (COMPARATIVE) / assets: $5.27B (COMPARATIVE)
+ENVA,0001529864,2024,2024-12-31,profitability,roe,0.1749885539934031,17.50%,COMPARATIVE,net_income: $209.4M (COMPARATIVE) / equity: $1.20B (COMPARATIVE)
+ENVA,0001529864,2025,2025-12-31,efficiency,asset_turnover,0.4872360102108208,0.49x,OK,revenue: $3.15B (OK) / assets: $6.47B (OK)
+ENVA,0001529864,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2025,2025-12-31,leverage,debt_to_equity,3.3652279752589167,3.37x,OK,total_debt: $4.50B (OK) / equity: $1.34B (OK)
+ENVA,0001529864,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2025,2025-12-31,leverage,interest_coverage,2.1792546528934147,2.18x,OK,ebit: $739.4M (OK) / interest_expense: $339.3M (OK)
+ENVA,0001529864,2025,2025-12-31,profitability,net_margin,0.09784992192985713,9.78%,OK,net_income: $308.4M (OK) / revenue: $3.15B (OK)
+ENVA,0001529864,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2025,2025-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2025,2025-12-31,profitability,roa,0.04767600556054388,4.77%,OK,net_income: $308.4M (OK) / assets: $6.47B (OK)
+ENVA,0001529864,2025,2025-12-31,profitability,roe,0.2307050670145819,23.07%,OK,net_income: $308.4M (OK) / equity: $1.34B (OK)
+ENVA,0001529864,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+ENVA,0001529864,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+ENVA,0001529864,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+ENVA,0001529864,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+ENVA,0001529864,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+ENVA,0001529864,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+ENVA,0001529864,2026,,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+ENVA,0001529864,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+ENVA,0001529864,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+LC,0001409970,2021,2021-12-31,efficiency,asset_turnover,0.059757742302082785,0.06x,FALLBACK,revenue: $292.8M (FALLBACK_InterestAndDividendIncomeOperating) / assets: $4.90B (COMPARATIVE)
+LC,0001409970,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2021,2021-12-31,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+LC,0001409970,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2021,2021-12-31,leverage,interest_coverage,1.230547118161023,1.23x,SYNTHETIC_EBIT,ebit: $98.4M (SYNTHETIC_EBIT) / interest_expense: $80.0M (COMPARATIVE) [Synthetic EBIT: NI($18.6M) + Tax(-$136.0K) + Int($80.0M)]
+LC,0001409970,2021,2021-12-31,profitability,net_margin,0.0634493497978363,6.34%,FALLBACK,net_income: $18.6M (COMPARATIVE) / revenue: $292.8M (FALLBACK_InterestAndDividendIncomeOperating)
+LC,0001409970,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2021,2021-12-31,efficiency,receivables_turnover,0.10630125489293533,0.11x,FALLBACK,revenue: $292.8M (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $2.75B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+LC,0001409970,2021,2021-12-31,profitability,roa,0.0037915898944538102,0.38%,COMPARATIVE,net_income: $18.6M (COMPARATIVE) / assets: $4.90B (COMPARATIVE)
+LC,0001409970,2021,2021-12-31,profitability,roe,0.021852601965087586,2.19%,OK,net_income: $18.6M (COMPARATIVE) / equity: $850.2M (OK)
+LC,0001409970,2022,2022-12-31,efficiency,asset_turnover,0.06984431962567235,0.07x,FALLBACK,revenue: $557.3M (FALLBACK_InterestAndDividendIncomeOperating) / assets: $7.98B (COMPARATIVE)
+LC,0001409970,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2022,2022-12-31,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+LC,0001409970,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2022,2022-12-31,leverage,interest_coverage,2.8546567290795615,2.85x,SYNTHETIC_EBIT,ebit: $235.6M (SYNTHETIC_EBIT) / interest_expense: $82.5M (COMPARATIVE) [Synthetic EBIT: NI($289.7M) + Tax(-$136.6M) + Int($82.5M)]
+LC,0001409970,2022,2022-12-31,profitability,net_margin,0.5197635195751247,51.98%,FALLBACK,net_income: $289.7M (COMPARATIVE) / revenue: $557.3M (FALLBACK_InterestAndDividendIncomeOperating)
+LC,0001409970,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2022,2022-12-31,efficiency,receivables_turnover,0.11844935776704663,0.12x,FALLBACK,revenue: $557.3M (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $4.71B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+LC,0001409970,2022,2022-12-31,profitability,roa,0.03630252939096941,3.63%,COMPARATIVE,net_income: $289.7M (COMPARATIVE) / assets: $7.98B (COMPARATIVE)
+LC,0001409970,2022,2022-12-31,profitability,roe,0.24880743179987186,24.88%,COMPARATIVE,net_income: $289.7M (COMPARATIVE) / equity: $1.16B (COMPARATIVE)
+LC,0001409970,2023,2023-12-31,efficiency,asset_turnover,0.09432268365214332,0.09x,FALLBACK,revenue: $832.6M (FALLBACK_InterestAndDividendIncomeOperating) / assets: $8.83B (COMPARATIVE)
+LC,0001409970,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2023,2023-12-31,leverage,debt_to_equity,0.01546066453537324,0.02x,OK,total_debt: $19.4M (OK) / equity: $1.25B (COMPARATIVE)
+LC,0001409970,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2023,2023-12-31,leverage,interest_coverage,1.2016935507695943,1.20x,SYNTHETIC_EBIT,ebit: $325.4M (SYNTHETIC_EBIT) / interest_expense: $270.8M (COMPARATIVE) [Synthetic EBIT: NI($38.9M) + Tax($15.7M) + Int($270.8M)]
+LC,0001409970,2023,2023-12-31,profitability,net_margin,0.04676627073249823,4.68%,FALLBACK,net_income: $38.9M (COMPARATIVE) / revenue: $832.6M (FALLBACK_InterestAndDividendIncomeOperating)
+LC,0001409970,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2023,2023-12-31,efficiency,receivables_turnover,0.18340211215408217,0.18x,FALLBACK,revenue: $832.6M (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $4.54B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+LC,0001409970,2023,2023-12-31,profitability,roa,0.004411120159891919,0.44%,COMPARATIVE,net_income: $38.9M (COMPARATIVE) / assets: $8.83B (COMPARATIVE)
+LC,0001409970,2023,2023-12-31,profitability,roe,0.031105860098320687,3.11%,COMPARATIVE,net_income: $38.9M (COMPARATIVE) / equity: $1.25B (COMPARATIVE)
+LC,0001409970,2024,2024-12-31,efficiency,asset_turnover,0.08541058570196404,0.09x,FALLBACK,revenue: $908.0M (FALLBACK_InterestAndDividendIncomeOperating) / assets: $10.63B (COMPARATIVE)
+LC,0001409970,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2024,2024-12-31,leverage,debt_to_equity,0.0,0.00x,COMPARATIVE,total_debt: $0 (COMPARATIVE|ZERO_VALUE) / equity: $1.34B (COMPARATIVE)
+LC,0001409970,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2024,2024-12-31,leverage,interest_coverage,1.1740118796417387,1.17x,SYNTHETIC_EBIT,ebit: $439.0M (SYNTHETIC_EBIT) / interest_expense: $373.9M (COMPARATIVE) [Synthetic EBIT: NI($51.3M) + Tax($13.7M) + Int($373.9M)]
+LC,0001409970,2024,2024-12-31,profitability,net_margin,0.05653345198786728,5.65%,FALLBACK,net_income: $51.3M (COMPARATIVE) / revenue: $908.0M (FALLBACK_InterestAndDividendIncomeOperating)
+LC,0001409970,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2024,2024-12-31,efficiency,receivables_turnover,0.23346320110339608,0.23x,FALLBACK,revenue: $908.0M (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $3.89B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+LC,0001409970,2024,2024-12-31,profitability,roa,0.004828555246037608,0.48%,COMPARATIVE,net_income: $51.3M (COMPARATIVE) / assets: $10.63B (COMPARATIVE)
+LC,0001409970,2024,2024-12-31,profitability,roe,0.03825655067968169,3.83%,COMPARATIVE,net_income: $51.3M (COMPARATIVE) / equity: $1.34B (COMPARATIVE)
+LC,0001409970,2025,2025-12-31,efficiency,asset_turnover,0.0831222592060593,0.08x,FALLBACK,revenue: $961.5M (FALLBACK_InterestAndDividendIncomeOperating) / assets: $11.57B (OK)
+LC,0001409970,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2025,2025-12-31,leverage,debt_to_equity,0.0,0.00x,OK,total_debt: $0 (ZERO_VALUE) / equity: $1.50B (OK)
+LC,0001409970,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2025,2025-12-31,leverage,interest_coverage,1.526827264038872,1.53x,SYNTHETIC_EBIT,ebit: $512.8M (SYNTHETIC_EBIT) / interest_expense: $335.9M (OK) [Synthetic EBIT: NI($135.7M) + Tax($41.3M) + Int($335.9M)]
+LC,0001409970,2025,2025-12-31,profitability,net_margin,0.14110341399188595,14.11%,FALLBACK,net_income: $135.7M (OK) / revenue: $961.5M (FALLBACK_InterestAndDividendIncomeOperating)
+LC,0001409970,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2025,2025-12-31,efficiency,receivables_turnover,0.2405620218214897,0.24x,FALLBACK,revenue: $961.5M (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $4.00B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+LC,0001409970,2025,2025-12-31,profitability,roa,0.011728834552693438,1.17%,OK,net_income: $135.7M (OK) / assets: $11.57B (OK)
+LC,0001409970,2025,2025-12-31,profitability,roe,0.09042553191489362,9.04%,OK,net_income: $135.7M (OK) / equity: $1.50B (OK)
+LC,0001409970,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+LC,0001409970,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+LC,0001409970,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+LC,0001409970,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+LC,0001409970,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+LC,0001409970,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+LC,0001409970,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+LC,0001409970,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+LC,0001409970,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+OMF,0001584207,2021,2021-12-31,efficiency,asset_turnover,0.19751074903824395,0.20x,RESTATED|FALLBACK,revenue: $4.36B (FALLBACK_InterestAndDividendIncomeOperating) / assets: $22.09B (RESTATED)
+OMF,0001584207,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2021,2021-12-31,leverage,debt_to_equity,5.844583470530129,5.84x,RESTATED,total_debt: $17.75B (COMPARATIVE) / equity: $3.04B (RESTATED)
+OMF,0001584207,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2021,2021-12-31,leverage,interest_coverage,2.858057630736393,2.86x,FALLBACK|SYNTHETIC_EBIT,ebit: $2.68B (SYNTHETIC_EBIT) / interest_expense: $937.0M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($1.31B) + Tax($427.0M) + Int($937.0M)]
+OMF,0001584207,2021,2021-12-31,profitability,net_margin,0.3010999083409716,30.11%,FALLBACK,net_income: $1.31B (COMPARATIVE) / revenue: $4.36B (FALLBACK_InterestAndDividendIncomeOperating)
+OMF,0001584207,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2021,2021-12-31,efficiency,receivables_turnover,0.26681340180973345,0.27x,FALLBACK,revenue: $4.36B (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $16.36B (FALLBACK_NotesReceivableNet)
+OMF,0001584207,2021,2021-12-31,profitability,roa,0.059470468431771895,5.95%,RESTATED,net_income: $1.31B (COMPARATIVE) / assets: $22.09B (RESTATED)
+OMF,0001584207,2021,2021-12-31,profitability,roe,0.43266381297332895,43.27%,RESTATED,net_income: $1.31B (COMPARATIVE) / equity: $3.04B (RESTATED)
+OMF,0001584207,2022,2022-12-31,efficiency,asset_turnover,0.1967875049917913,0.20x,RESTATED|FALLBACK,revenue: $4.43B (FALLBACK_InterestAndDividendIncomeOperating) / assets: $22.54B (RESTATED)
+OMF,0001584207,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2022,2022-12-31,leverage,debt_to_equity,6.06334991708126,6.06x,RESTATED,total_debt: $18.28B (COMPARATIVE) / equity: $3.02B (RESTATED)
+OMF,0001584207,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2022,2022-12-31,leverage,interest_coverage,2.2948430493273544,2.29x,FALLBACK|SYNTHETIC_EBIT,ebit: $2.05B (SYNTHETIC_EBIT) / interest_expense: $892.0M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($872.0M) + Tax($283.0M) + Int($892.0M)]
+OMF,0001584207,2022,2022-12-31,profitability,net_margin,0.19661781285231117,19.66%,RESTATED|FALLBACK,net_income: $872.0M (RESTATED) / revenue: $4.43B (FALLBACK_InterestAndDividendIncomeOperating)
+OMF,0001584207,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2022,2022-12-31,efficiency,receivables_turnover,0.2620229233132459,0.26x,FALLBACK,revenue: $4.43B (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $16.93B (FALLBACK_NotesReceivableNet)
+OMF,0001584207,2022,2022-12-31,profitability,roa,0.038691928828149265,3.87%,RESTATED,net_income: $872.0M (RESTATED) / assets: $22.54B (RESTATED)
+OMF,0001584207,2022,2022-12-31,profitability,roe,0.2892205638474295,28.92%,RESTATED,net_income: $872.0M (RESTATED) / equity: $3.02B (RESTATED)
+OMF,0001584207,2023,2023-12-31,efficiency,asset_turnover,0.18786531653906313,0.19x,FALLBACK,revenue: $4.56B (FALLBACK_InterestAndDividendIncomeOperating) / assets: $24.29B (COMPARATIVE)
+OMF,0001584207,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2023,2023-12-31,leverage,debt_to_equity,6.2187696170747016,6.22x,COMPARATIVE,total_debt: $19.81B (COMPARATIVE) / equity: $3.19B (COMPARATIVE)
+OMF,0001584207,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2023,2023-12-31,leverage,interest_coverage,1.8243375858684985,1.82x,FALLBACK|SYNTHETIC_EBIT,ebit: $1.86B (SYNTHETIC_EBIT) / interest_expense: $1.02B (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($641.0M) + Tax($199.0M) + Int($1.02B)]
+OMF,0001584207,2023,2023-12-31,profitability,net_margin,0.14044697633654687,14.04%,FALLBACK,net_income: $641.0M (COMPARATIVE) / revenue: $4.56B (FALLBACK_InterestAndDividendIncomeOperating)
+OMF,0001584207,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2023,2023-12-31,efficiency,receivables_turnover,0.2521825616090176,0.25x,FALLBACK,revenue: $4.56B (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $18.10B (FALLBACK_NotesReceivableNet)
+OMF,0001584207,2023,2023-12-31,profitability,roa,0.02638511566641969,2.64%,COMPARATIVE,net_income: $641.0M (COMPARATIVE) / assets: $24.29B (COMPARATIVE)
+OMF,0001584207,2023,2023-12-31,profitability,roe,0.20119271814187067,20.12%,COMPARATIVE,net_income: $641.0M (COMPARATIVE) / equity: $3.19B (COMPARATIVE)
+OMF,0001584207,2024,2024-12-31,efficiency,asset_turnover,0.19270551910459283,0.19x,FALLBACK,revenue: $4.99B (FALLBACK_InterestAndDividendIncomeOperating) / assets: $25.91B (COMPARATIVE)
+OMF,0001584207,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2024,2024-12-31,leverage,debt_to_equity,6.718270134753996,6.72x,COMPARATIVE,total_debt: $21.44B (COMPARATIVE) / equity: $3.19B (COMPARATIVE)
+OMF,0001584207,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2024,2024-12-31,leverage,interest_coverage,1.5628691983122363,1.56x,FALLBACK|SYNTHETIC_EBIT,ebit: $1.85B (SYNTHETIC_EBIT) / interest_expense: $1.19B (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($509.0M) + Tax($158.0M) + Int($1.19B)]
+OMF,0001584207,2024,2024-12-31,profitability,net_margin,0.10194271980773083,10.19%,FALLBACK,net_income: $509.0M (COMPARATIVE) / revenue: $4.99B (FALLBACK_InterestAndDividendIncomeOperating)
+OMF,0001584207,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2024,2024-12-31,efficiency,receivables_turnover,0.2486182343275407,0.25x,FALLBACK,revenue: $4.99B (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $20.08B (FALLBACK_NotesReceivableNet)
+OMF,0001584207,2024,2024-12-31,profitability,roa,0.019644924739482827,1.96%,COMPARATIVE,net_income: $509.0M (COMPARATIVE) / assets: $25.91B (COMPARATIVE)
+OMF,0001584207,2024,2024-12-31,profitability,roe,0.15951112503917267,15.95%,COMPARATIVE,net_income: $509.0M (COMPARATIVE) / equity: $3.19B (COMPARATIVE)
+OMF,0001584207,2025,2025-12-31,efficiency,asset_turnover,0.19917482108952825,0.20x,FALLBACK,revenue: $5.46B (FALLBACK_InterestAndDividendIncomeOperating) / assets: $27.39B (OK)
+OMF,0001584207,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2025,2025-12-31,leverage,debt_to_equity,6.672743310790944,6.67x,OK,total_debt: $22.69B (OK) / equity: $3.40B (OK)
+OMF,0001584207,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2025,2025-12-31,leverage,interest_coverage,1.7869496855345912,1.79x,FALLBACK|SYNTHETIC_EBIT,ebit: $2.27B (SYNTHETIC_EBIT) / interest_expense: $1.27B (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($783.0M) + Tax($218.0M) + Int($1.27B)]
+OMF,0001584207,2025,2025-12-31,profitability,net_margin,0.14353803849679195,14.35%,FALLBACK,net_income: $783.0M (OK) / revenue: $5.46B (FALLBACK_InterestAndDividendIncomeOperating)
+OMF,0001584207,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2025,2025-12-31,efficiency,receivables_turnover,0.2575907824526609,0.26x,FALLBACK,revenue: $5.46B (FALLBACK_InterestAndDividendIncomeOperating) / receivables: $21.18B (FALLBACK_NotesReceivableNet)
+OMF,0001584207,2025,2025-12-31,profitability,roa,0.028589163137140352,2.86%,OK,net_income: $783.0M (OK) / assets: $27.39B (OK)
+OMF,0001584207,2025,2025-12-31,profitability,roe,0.23022640399882388,23.02%,OK,net_income: $783.0M (OK) / equity: $3.40B (OK)
+OMF,0001584207,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+OMF,0001584207,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+OMF,0001584207,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OMF,0001584207,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+OMF,0001584207,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+OMF,0001584207,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OMF,0001584207,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OMF,0001584207,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+OMF,0001584207,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+OPRT,0001538716,2021,2021-12-31,efficiency,asset_turnover,0.21271183133245664,0.21x,COMPARATIVE,revenue: $626.8M (COMPARATIVE) / assets: $2.95B (COMPARATIVE)
+OPRT,0001538716,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2021,2021-12-31,leverage,debt_to_equity,3.391895091913804,3.39x,FALLBACK,total_debt: $2.05B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $603.9M (COMPARATIVE)
+OPRT,0001538716,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2021,2021-12-31,leverage,interest_coverage,2.3172292265413583,2.32x,FALLBACK|SYNTHETIC_EBIT,ebit: $110.5M (SYNTHETIC_EBIT) / interest_expense: $47.7M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($47.4M) + Tax($15.4M) + Int($47.7M)]
+OPRT,0001538716,2021,2021-12-31,profitability,net_margin,0.07564671608310386,7.56%,COMPARATIVE,net_income: $47.4M (COMPARATIVE) / revenue: $626.8M (COMPARATIVE)
+OPRT,0001538716,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2021,2021-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2021,2021-12-31,profitability,roa,0.016090951512323422,1.61%,COMPARATIVE,net_income: $47.4M (COMPARATIVE) / assets: $2.95B (COMPARATIVE)
+OPRT,0001538716,2021,2021-12-31,profitability,roe,0.07851546910732413,7.85%,COMPARATIVE,net_income: $47.4M (COMPARATIVE) / equity: $603.9M (COMPARATIVE)
+OPRT,0001538716,2022,2022-12-31,efficiency,asset_turnover,0.26359308131981257,0.26x,COMPARATIVE,revenue: $952.5M (COMPARATIVE) / assets: $3.61B (COMPARATIVE)
+OPRT,0001538716,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2022,2022-12-31,leverage,debt_to_equity,5.295102803328713,5.30x,FALLBACK,total_debt: $2.90B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $547.6M (COMPARATIVE)
+OPRT,0001538716,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2022,2022-12-31,leverage,interest_coverage,0.1908733314704555,0.19x,FALLBACK|SYNTHETIC_EBIT,ebit: $17.8M (SYNTHETIC_EBIT) / interest_expense: $93.0M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI(-$77.7M) + Tax($2.5M) + Int($93.0M)]
+OPRT,0001538716,2022,2022-12-31,profitability,net_margin,-0.08161714144738569,-8.16%,COMPARATIVE,net_income: -$77.7M (COMPARATIVE) / revenue: $952.5M (COMPARATIVE)
+OPRT,0001538716,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2022,2022-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2022,2022-12-31,profitability,roa,-0.02151371380263138,-2.15%,COMPARATIVE,net_income: -$77.7M (COMPARATIVE) / assets: $3.61B (COMPARATIVE)
+OPRT,0001538716,2022,2022-12-31,profitability,roe,-0.14197250177593457,-14.20%,COMPARATIVE,net_income: -$77.7M (COMPARATIVE) / equity: $547.6M (COMPARATIVE)
+OPRT,0001538716,2023,2023-12-31,efficiency,asset_turnover,0.30977540880591625,0.31x,COMPARATIVE,revenue: $1.06B (COMPARATIVE) / assets: $3.41B (COMPARATIVE)
+OPRT,0001538716,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2023,2023-12-31,leverage,debt_to_equity,5.351967339591102,5.35x,FALLBACK,total_debt: $2.16B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $404.4M (COMPARATIVE)
+OPRT,0001538716,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2023,2023-12-31,leverage,interest_coverage,-0.4137859921745237,-0.41x,FALLBACK|SYNTHETIC_EBIT,ebit: -$74.2M (SYNTHETIC_EBIT) / interest_expense: $179.4M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI(-$180.0M) + Tax(-$73.7M) + Int($179.4M)]
+OPRT,0001538716,2023,2023-12-31,profitability,net_margin,-0.1702599726185261,-17.03%,COMPARATIVE,net_income: -$180.0M (COMPARATIVE) / revenue: $1.06B (COMPARATIVE)
+OPRT,0001538716,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2023,2023-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2023,2023-12-31,profitability,roa,-0.05274235262118803,-5.27%,COMPARATIVE,net_income: -$180.0M (COMPARATIVE) / assets: $3.41B (COMPARATIVE)
+OPRT,0001538716,2023,2023-12-31,profitability,roe,-0.444978289037695,-44.50%,COMPARATIVE,net_income: -$180.0M (COMPARATIVE) / equity: $404.4M (COMPARATIVE)
+OPRT,0001538716,2024,2024-12-31,efficiency,asset_turnover,0.3104254806865477,0.31x,COMPARATIVE,revenue: $1.00B (COMPARATIVE) / assets: $3.23B (COMPARATIVE)
+OPRT,0001538716,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2024,2024-12-31,leverage,debt_to_equity,4.630947771255112,4.63x,FALLBACK,total_debt: $1.64B (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $353.8M (COMPARATIVE)
+OPRT,0001538716,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2024,2024-12-31,leverage,interest_coverage,0.5163840811562073,0.52x,FALLBACK|SYNTHETIC_EBIT,ebit: $123.0M (SYNTHETIC_EBIT) / interest_expense: $238.2M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI(-$78.7M) + Tax(-$36.5M) + Int($238.2M)]
+OPRT,0001538716,2024,2024-12-31,profitability,net_margin,-0.07854258690823787,-7.85%,COMPARATIVE,net_income: -$78.7M (COMPARATIVE) / revenue: $1.00B (COMPARATIVE)
+OPRT,0001538716,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2024,2024-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2024,2024-12-31,profitability,roa,-0.02438162029535469,-2.44%,COMPARATIVE,net_income: -$78.7M (COMPARATIVE) / assets: $3.23B (COMPARATIVE)
+OPRT,0001538716,2024,2024-12-31,profitability,roe,-0.22238552439310474,-22.24%,COMPARATIVE,net_income: -$78.7M (COMPARATIVE) / equity: $353.8M (COMPARATIVE)
+OPRT,0001538716,2025,2025-12-31,efficiency,asset_turnover,0.29365478400518624,0.29x,OK,revenue: $956.7M (OK) / assets: $3.26B (OK)
+OPRT,0001538716,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2025,2025-12-31,leverage,debt_to_equity,1.1989145871893603,1.20x,FALLBACK,total_debt: $467.7M (FALLBACK_SecuredDebt+WarehouseAgreementBorrowings) / equity: $390.1M (OK)
+OPRT,0001538716,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2025,2025-12-31,leverage,interest_coverage,1.190390621287845,1.19x,FALLBACK|SYNTHETIC_EBIT,ebit: $275.6M (SYNTHETIC_EBIT) / interest_expense: $231.5M (FALLBACK_InterestExpenseBorrowings) [Synthetic EBIT: NI($25.2M) + Tax($18.8M) + Int($231.5M)]
+OPRT,0001538716,2025,2025-12-31,profitability,net_margin,0.02638904132499203,2.64%,OK,net_income: $25.2M (OK) / revenue: $956.7M (OK)
+OPRT,0001538716,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2025,2025-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2025,2025-12-31,profitability,roa,0.007749268230394468,0.77%,OK,net_income: $25.2M (OK) / assets: $3.26B (OK)
+OPRT,0001538716,2025,2025-12-31,profitability,roe,0.0647197255961567,6.47%,OK,net_income: $25.2M (OK) / equity: $390.1M (OK)
+OPRT,0001538716,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+OPRT,0001538716,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+OPRT,0001538716,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+OPRT,0001538716,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+OPRT,0001538716,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+OPRT,0001538716,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+OPRT,0001538716,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+OPRT,0001538716,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+OPRT,0001538716,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+PGY,0001883085,2021,2021-12-31,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+PGY,0001883085,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2021,2021-12-31,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+PGY,0001883085,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2021,2021-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2021,2021-12-31,profitability,net_margin,-0.1920634318608983,-19.21%,OK,net_income: -$91.2M (OK) / revenue: $474.6M (OK)
+PGY,0001883085,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2021,2021-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2021,2021-12-31,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+PGY,0001883085,2021,2021-12-31,profitability,roe,-0.5139552979385629,-51.40%,FALLBACK,net_income: -$91.2M (OK) / equity: $177.4M (FALLBACK_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest)
+PGY,0001883085,2022,2022-12-31,efficiency,asset_turnover,0.7166233366090028,0.72x,OK,revenue: $748.9M (COMPARATIVE) / assets: $1.05B (OK)
+PGY,0001883085,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2022,2022-12-31,leverage,debt_to_equity,0.2793593727417257,0.28x,FALLBACK,total_debt: $154.6M (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent) / equity: $553.5M (OK)
+PGY,0001883085,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2022,2022-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2022,2022-12-31,profitability,net_margin,-0.4036716480088874,-40.37%,COMPARATIVE,net_income: -$302.3M (COMPARATIVE) / revenue: $748.9M (COMPARATIVE)
+PGY,0001883085,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2022,2022-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2022,2022-12-31,profitability,roa,-0.2892805232905838,-28.93%,OK,net_income: -$302.3M (COMPARATIVE) / assets: $1.05B (OK)
+PGY,0001883085,2022,2022-12-31,profitability,roe,-0.5461789998554705,-54.62%,OK,net_income: -$302.3M (COMPARATIVE) / equity: $553.5M (OK)
+PGY,0001883085,2023,2023-12-31,efficiency,asset_turnover,0.6720184776923739,0.67x,RESTATED,revenue: $812.1M (RESTATED) / assets: $1.21B (COMPARATIVE)
+PGY,0001883085,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2023,2023-12-31,leverage,debt_to_equity,0.6462380364503029,0.65x,FALLBACK,total_debt: $361.7M (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent) / equity: $559.7M (COMPARATIVE)
+PGY,0001883085,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2023,2023-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2023,2023-12-31,profitability,net_margin,-0.1581649428422599,-15.82%,RESTATED,net_income: -$128.4M (RESTATED) / revenue: $812.1M (RESTATED)
+PGY,0001883085,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2023,2023-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2023,2023-12-31,profitability,roa,-0.10628976411315683,-10.63%,RESTATED,net_income: -$128.4M (RESTATED) / assets: $1.21B (COMPARATIVE)
+PGY,0001883085,2023,2023-12-31,profitability,roe,-0.22946789561227826,-22.95%,RESTATED,net_income: -$128.4M (RESTATED) / equity: $559.7M (COMPARATIVE)
+PGY,0001883085,2024,2024-12-31,efficiency,asset_turnover,0.799527834233877,0.80x,RESTATED,revenue: $1.03B (RESTATED) / assets: $1.29B (RESTATED)
+PGY,0001883085,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2024,2024-12-31,leverage,debt_to_equity,0.984152702524725,0.98x,RESTATED,total_debt: $321.3M (OK) / equity: $326.5M (RESTATED)
+PGY,0001883085,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2024,2024-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2024,2024-12-31,profitability,net_margin,-0.38886585394207596,-38.89%,RESTATED,net_income: -$401.4M (RESTATED) / revenue: $1.03B (RESTATED)
+PGY,0001883085,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2024,2024-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2024,2024-12-31,profitability,roa,-0.3109090740098151,-31.09%,RESTATED,net_income: -$401.4M (RESTATED) / assets: $1.29B (RESTATED)
+PGY,0001883085,2024,2024-12-31,profitability,roe,-1.2294550232625094,-122.95%,RESTATED,net_income: -$401.4M (RESTATED) / equity: $326.5M (RESTATED)
+PGY,0001883085,2025,2025-12-31,efficiency,asset_turnover,0.8418062065548277,0.84x,RESTATED,revenue: $1.30B (RESTATED) / assets: $1.55B (RESTATED)
+PGY,0001883085,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2025,2025-12-31,leverage,debt_to_equity,0.4039273609059679,0.40x,RESTATED,total_debt: $193.9M (RESTATED) / equity: $480.0M (RESTATED)
+PGY,0001883085,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2025,2025-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2025,2025-12-31,profitability,net_margin,0.06254149505133091,6.25%,RESTATED,net_income: $81.4M (RESTATED) / revenue: $1.30B (RESTATED)
+PGY,0001883085,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2025,2025-12-31,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2025,2025-12-31,profitability,roa,0.05264781870142841,5.26%,RESTATED,net_income: $81.4M (RESTATED) / assets: $1.55B (RESTATED)
+PGY,0001883085,2025,2025-12-31,profitability,roe,0.16955441161458865,16.96%,RESTATED,net_income: $81.4M (RESTATED) / equity: $480.0M (RESTATED)
+PGY,0001883085,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+PGY,0001883085,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+PGY,0001883085,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+PGY,0001883085,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+PGY,0001883085,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+PGY,0001883085,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+PGY,0001883085,2026,,efficiency,receivables_turnover,,N/A — securitized/fair-value receivables structure,NOT_APPLICABLE,Receivables are off-balance-sheet / carried under ASC 825 Fair Value Option; turnover is non-comparable.
+PGY,0001883085,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+PGY,0001883085,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+SEZL,0001662991,2021,2021-12-31,efficiency,asset_turnover,0.5139426908725937,0.51x,COMPARATIVE,revenue: $114.8M (COMPARATIVE) / assets: $223.4M (COMPARATIVE)
+SEZL,0001662991,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2021,2021-12-31,leverage,debt_to_equity,2.056283151493444,2.06x,FALLBACK,total_debt: $77.7M (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent) / equity: $37.8M (COMPARATIVE)
+SEZL,0001662991,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2021,2021-12-31,leverage,interest_coverage,-13.03456769458621,-13.03x,COMPARATIVE,ebit: -$68.7M (COMPARATIVE) / interest_expense: $5.3M (COMPARATIVE)
+SEZL,0001662991,2021,2021-12-31,profitability,net_margin,-0.6546818150523224,-65.47%,COMPARATIVE,net_income: -$75.2M (COMPARATIVE) / revenue: $114.8M (COMPARATIVE)
+SEZL,0001662991,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2021,2021-12-31,efficiency,receivables_turnover,0.856926361052136,0.86x,FALLBACK,revenue: $114.8M (COMPARATIVE) / receivables: $134.0M (FALLBACK_NotesReceivableNet)
+SEZL,0001662991,2021,2021-12-31,profitability,roa,-0.3364689336933443,-33.65%,COMPARATIVE,net_income: -$75.2M (COMPARATIVE) / assets: $223.4M (COMPARATIVE)
+SEZL,0001662991,2021,2021-12-31,profitability,roe,-1.9889999845999309,-198.90%,COMPARATIVE,net_income: -$75.2M (COMPARATIVE) / equity: $37.8M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,efficiency,asset_turnover,0.7276217407953798,0.73x,COMPARATIVE,revenue: $125.6M (COMPARATIVE) / assets: $172.6M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2022,2022-12-31,leverage,debt_to_equity,7.211998286602001,7.21x,FALLBACK,total_debt: $63.8M (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent) / equity: $8.8M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2022,2022-12-31,leverage,interest_coverage,-3.306074168708745,-3.31x,COMPARATIVE,ebit: -$28.4M (COMPARATIVE) / interest_expense: $8.6M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,profitability,net_margin,-0.3033656304511983,-30.34%,COMPARATIVE,net_income: -$38.1M (COMPARATIVE) / revenue: $125.6M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2022,2022-12-31,efficiency,receivables_turnover,1.3450362861815848,1.35x,FALLBACK,revenue: $125.6M (COMPARATIVE) / receivables: $93.4M (FALLBACK_NotesReceivableNet)
+SEZL,0001662991,2022,2022-12-31,profitability,roa,-0.22073542812638877,-22.07%,COMPARATIVE,net_income: -$38.1M (COMPARATIVE) / assets: $172.6M (COMPARATIVE)
+SEZL,0001662991,2022,2022-12-31,profitability,roe,-4.307666664480441,-430.77%,COMPARATIVE,net_income: -$38.1M (COMPARATIVE) / equity: $8.8M (COMPARATIVE)
+SEZL,0001662991,2023,2023-12-31,efficiency,asset_turnover,0.749401866581729,0.75x,COMPARATIVE,revenue: $159.4M (COMPARATIVE) / assets: $212.6M (COMPARATIVE)
+SEZL,0001662991,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2023,2023-12-31,leverage,debt_to_equity,0.0,0.00x,RESTATED|FALLBACK,total_debt: $0 (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent|ZERO_VALUE) / equity: $22.1M (RESTATED)
+SEZL,0001662991,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2023,2023-12-31,leverage,interest_coverage,1.390272588703425,1.39x,OK,ebit: $22.2M (COMPARATIVE) / interest_expense: $16.0M (OK)
+SEZL,0001662991,2023,2023-12-31,profitability,net_margin,0.04454170294061931,4.45%,COMPARATIVE,net_income: $7.1M (COMPARATIVE) / revenue: $159.4M (COMPARATIVE)
+SEZL,0001662991,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2023,2023-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+SEZL,0001662991,2023,2023-12-31,profitability,roa,0.033379635324428995,3.34%,COMPARATIVE,net_income: $7.1M (COMPARATIVE) / assets: $212.6M (COMPARATIVE)
+SEZL,0001662991,2023,2023-12-31,profitability,roe,0.32126468724540597,32.13%,RESTATED,net_income: $7.1M (COMPARATIVE) / equity: $22.1M (RESTATED)
+SEZL,0001662991,2024,2024-12-31,efficiency,asset_turnover,0.908691164050246,0.91x,RESTATED,revenue: $271.1M (RESTATED) / assets: $298.4M (RESTATED)
+SEZL,0001662991,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2024,2024-12-31,leverage,debt_to_equity,1.1839471736779188,1.18x,RESTATED,total_debt: $104.0M (RESTATED) / equity: $87.8M (RESTATED)
+SEZL,0001662991,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2024,2024-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SEZL,0001662991,2024,2024-12-31,profitability,net_margin,0.28961228644772946,28.96%,RESTATED,net_income: $78.5M (RESTATED) / revenue: $271.1M (RESTATED)
+SEZL,0001662991,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2024,2024-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+SEZL,0001662991,2024,2024-12-31,profitability,roa,0.26316812569544057,26.32%,RESTATED,net_income: $78.5M (RESTATED) / assets: $298.4M (RESTATED)
+SEZL,0001662991,2024,2024-12-31,profitability,roe,0.8939716513918142,89.40%,RESTATED,net_income: $78.5M (RESTATED) / equity: $87.8M (RESTATED)
+SEZL,0001662991,2025,2025-12-31,efficiency,asset_turnover,1.1250534069245357,1.13x,OK,revenue: $450.3M (OK) / assets: $400.2M (OK)
+SEZL,0001662991,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2025,2025-12-31,leverage,debt_to_equity,0.8243930016312253,0.82x,FALLBACK,total_debt: $140.0M (FALLBACK_SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent) / equity: $169.8M (OK)
+SEZL,0001662991,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2025,2025-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SEZL,0001662991,2025,2025-12-31,profitability,net_margin,0.295661134541029,29.57%,OK,net_income: $133.1M (OK) / revenue: $450.3M (OK)
+SEZL,0001662991,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2025,2025-12-31,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+SEZL,0001662991,2025,2025-12-31,profitability,roa,0.3326345667105582,33.26%,OK,net_income: $133.1M (OK) / assets: $400.2M (OK)
+SEZL,0001662991,2025,2025-12-31,profitability,roe,0.7839892586463775,78.40%,OK,net_income: $133.1M (OK) / equity: $169.8M (OK)
+SEZL,0001662991,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+SEZL,0001662991,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+SEZL,0001662991,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SEZL,0001662991,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SEZL,0001662991,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+SEZL,0001662991,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SEZL,0001662991,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+SEZL,0001662991,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+SEZL,0001662991,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+SOFI,0001818874,2021,2021-12-31,efficiency,asset_turnover,0.026995335605993074,0.03x,FALLBACK,revenue: $247.7M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / assets: $9.18B (COMPARATIVE)
+SOFI,0001818874,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2021,2021-12-31,leverage,debt_to_equity,0.9019159857529557,0.90x,COMPARATIVE,total_debt: $3.95B (COMPARATIVE) / equity: $4.38B (COMPARATIVE)
+SOFI,0001818874,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2021,2021-12-31,leverage,interest_coverage,-3.6818031447030437,-3.68x,SYNTHETIC_EBIT,ebit: -$378.4M (SYNTHETIC_EBIT) / interest_expense: $102.8M (COMPARATIVE) [Synthetic EBIT: NI(-$483.9M) + Tax($2.8M) + Int($102.8M)]
+SOFI,0001818874,2021,2021-12-31,profitability,net_margin,-1.9535802808031713,-195.36%,FALLBACK,net_income: -$483.9M (COMPARATIVE) / revenue: $247.7M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax)
+SOFI,0001818874,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2021,2021-12-31,efficiency,receivables_turnover,2.1371212644074817,2.14x,RESTATED|FALLBACK,revenue: $247.7M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / receivables: $115.9M (RESTATED)
+SOFI,0001818874,2021,2021-12-31,profitability,roa,-0.052737555313531796,-5.27%,COMPARATIVE,net_income: -$483.9M (COMPARATIVE) / assets: $9.18B (COMPARATIVE)
+SOFI,0001818874,2021,2021-12-31,profitability,roe,-0.11055531809466458,-11.06%,COMPARATIVE,net_income: -$483.9M (COMPARATIVE) / equity: $4.38B (COMPARATIVE)
+SOFI,0001818874,2022,2022-12-31,efficiency,asset_turnover,0.01983914392475671,0.02x,FALLBACK,revenue: $377.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / assets: $19.01B (COMPARATIVE)
+SOFI,0001818874,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2022,2022-12-31,leverage,debt_to_equity,1.0533361289775047,1.05x,OK,total_debt: $5.49B (OK) / equity: $5.21B (COMPARATIVE)
+SOFI,0001818874,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2022,2022-12-31,leverage,interest_coverage,-0.6839043719455818,-0.68x,SYNTHETIC_EBIT,ebit: -$129.4M (SYNTHETIC_EBIT) / interest_expense: $189.3M (COMPARATIVE) [Synthetic EBIT: NI(-$320.4M) + Tax($1.7M) + Int($189.3M)]
+SOFI,0001818874,2022,2022-12-31,profitability,net_margin,-0.8496695801599593,-84.97%,FALLBACK,net_income: -$320.4M (COMPARATIVE) / revenue: $377.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax)
+SOFI,0001818874,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2022,2022-12-31,efficiency,receivables_turnover,1.224508616462688,1.22x,FALLBACK,revenue: $377.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / receivables: $308.0M (FALLBACK_NotesReceivableNet)
+SOFI,0001818874,2022,2022-12-31,profitability,roa,-0.01685671708928104,-1.69%,COMPARATIVE,net_income: -$320.4M (COMPARATIVE) / assets: $19.01B (COMPARATIVE)
+SOFI,0001818874,2022,2022-12-31,profitability,roe,-0.06152087651125113,-6.15%,COMPARATIVE,net_income: -$320.4M (COMPARATIVE) / equity: $5.21B (COMPARATIVE)
+SOFI,0001818874,2023,2023-12-31,efficiency,asset_turnover,0.014013499249107012,0.01x,FALLBACK,revenue: $421.5M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / assets: $30.07B (COMPARATIVE)
+SOFI,0001818874,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2023,2023-12-31,leverage,debt_to_equity,0.9997715207927541,1.00x,FALLBACK,total_debt: $5.23B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $5.23B (COMPARATIVE)
+SOFI,0001818874,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2023,2023-12-31,leverage,interest_coverage,0.6184623102972532,0.62x,SYNTHETIC_EBIT,ebit: $488.2M (SYNTHETIC_EBIT) / interest_expense: $789.3M (OK) [Synthetic EBIT: NI(-$300.7M) + Tax(-$416.0K) + Int($789.3M)]
+SOFI,0001818874,2023,2023-12-31,profitability,net_margin,-0.713582027931874,-71.36%,FALLBACK,net_income: -$300.7M (COMPARATIVE) / revenue: $421.5M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax)
+SOFI,0001818874,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2023,2023-12-31,efficiency,receivables_turnover,0.5040357156952207,0.50x,FALLBACK,revenue: $421.5M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / receivables: $836.2M (FALLBACK_NotesReceivableNet)
+SOFI,0001818874,2023,2023-12-31,profitability,roa,-0.009999781212599574,-1.00%,COMPARATIVE,net_income: -$300.7M (COMPARATIVE) / assets: $30.07B (COMPARATIVE)
+SOFI,0001818874,2023,2023-12-31,profitability,roe,-0.05745258674377394,-5.75%,COMPARATIVE,net_income: -$300.7M (COMPARATIVE) / equity: $5.23B (COMPARATIVE)
+SOFI,0001818874,2024,2024-12-31,efficiency,asset_turnover,0.01387889106688539,0.01x,FALLBACK,revenue: $503.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / assets: $36.25B (COMPARATIVE)
+SOFI,0001818874,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2024,2024-12-31,leverage,debt_to_equity,0.4739660518849115,0.47x,FALLBACK,total_debt: $3.09B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $6.53B (COMPARATIVE)
+SOFI,0001818874,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2024,2024-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SOFI,0001818874,2024,2024-12-31,profitability,net_margin,0.9911393436595027,99.11%,FALLBACK,net_income: $498.7M (COMPARATIVE) / revenue: $503.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax)
+SOFI,0001818874,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2024,2024-12-31,efficiency,receivables_turnover,0.4036421604257825,0.40x,FALLBACK,revenue: $503.1M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / receivables: $1.25B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+SOFI,0001818874,2024,2024-12-31,profitability,roa,0.013755914982754521,1.38%,COMPARATIVE,net_income: $498.7M (COMPARATIVE) / assets: $36.25B (COMPARATIVE)
+SOFI,0001818874,2024,2024-12-31,profitability,roe,0.07642218535282187,7.64%,COMPARATIVE,net_income: $498.7M (COMPARATIVE) / equity: $6.53B (COMPARATIVE)
+SOFI,0001818874,2025,2025-12-31,efficiency,asset_turnover,0.012225565656920963,0.01x,FALLBACK,revenue: $619.4M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / assets: $50.66B (OK)
+SOFI,0001818874,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2025,2025-12-31,leverage,debt_to_equity,0.1730456995308163,0.17x,FALLBACK,total_debt: $1.82B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $10.49B (OK)
+SOFI,0001818874,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2025,2025-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SOFI,0001818874,2025,2025-12-31,profitability,net_margin,0.7771335571152477,77.71%,FALLBACK,net_income: $481.3M (OK) / revenue: $619.4M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax)
+SOFI,0001818874,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2025,2025-12-31,efficiency,receivables_turnover,0.4083459481412718,0.41x,FALLBACK,revenue: $619.4M (FALLBACK_RevenueFromContractWithCustomerExcludingAssessedTax) / receivables: $1.52B (FALLBACK_FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss)
+SOFI,0001818874,2025,2025-12-31,profitability,roa,0.009500897326708998,0.95%,OK,net_income: $481.3M (OK) / assets: $50.66B (OK)
+SOFI,0001818874,2025,2025-12-31,profitability,roe,0.04588590775819046,4.59%,OK,net_income: $481.3M (OK) / equity: $10.49B (OK)
+SOFI,0001818874,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+SOFI,0001818874,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+SOFI,0001818874,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+SOFI,0001818874,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+SOFI,0001818874,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+SOFI,0001818874,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+SOFI,0001818874,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+SOFI,0001818874,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+SOFI,0001818874,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.
+UPST,0001647639,2021,2021-12-31,efficiency,asset_turnover,0.4661411570184377,0.47x,COMPARATIVE,revenue: $848.6M (COMPARATIVE) / assets: $1.82B (COMPARATIVE)
+UPST,0001647639,2021,2021-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2021,2021-12-31,leverage,debt_to_equity,0.8616664064687676,0.86x,FALLBACK,total_debt: $695.4M (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $807.1M (COMPARATIVE)
+UPST,0001647639,2021,2021-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2021,2021-12-31,leverage,interest_coverage,43.03023824068418,43.03x,COMPARATIVE,ebit: $140.9M (COMPARATIVE) / interest_expense: $3.3M (COMPARATIVE)
+UPST,0001647639,2021,2021-12-31,profitability,net_margin,0.159609657914491,15.96%,COMPARATIVE,net_income: $135.4M (COMPARATIVE) / revenue: $848.6M (COMPARATIVE)
+UPST,0001647639,2021,2021-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2021,2021-12-31,efficiency,receivables_turnover,3.361054670326406,3.36x,FALLBACK,revenue: $848.6M (COMPARATIVE) / receivables: $252.5M (FALLBACK_NotesReceivableNet)
+UPST,0001647639,2021,2021-12-31,profitability,roa,0.07440063061157788,7.44%,COMPARATIVE,net_income: $135.4M (COMPARATIVE) / assets: $1.82B (COMPARATIVE)
+UPST,0001647639,2021,2021-12-31,profitability,roe,0.1678189716483413,16.78%,COMPARATIVE,net_income: $135.4M (COMPARATIVE) / equity: $807.1M (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,efficiency,asset_turnover,0.43513455719726823,0.44x,COMPARATIVE,revenue: $842.4M (COMPARATIVE) / assets: $1.94B (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2022,2022-12-31,leverage,debt_to_equity,1.4668986593499744,1.47x,FALLBACK,total_debt: $986.4M (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $672.4M (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2022,2022-12-31,leverage,interest_coverage,-10.501060592087061,-10.50x,COMPARATIVE,ebit: -$113.9M (COMPARATIVE) / interest_expense: $10.8M (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,profitability,net_margin,-0.1289878021565825,-12.90%,COMPARATIVE,net_income: -$108.7M (COMPARATIVE) / revenue: $842.4M (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2022,2022-12-31,efficiency,receivables_turnover,0.833755434615868,0.83x,FALLBACK,revenue: $842.4M (COMPARATIVE) / receivables: $1.01B (FALLBACK_NotesReceivableNet)
+UPST,0001647639,2022,2022-12-31,profitability,roa,-0.05612705017525338,-5.61%,COMPARATIVE,net_income: -$108.7M (COMPARATIVE) / assets: $1.94B (COMPARATIVE)
+UPST,0001647639,2022,2022-12-31,profitability,roe,-0.16159926238223768,-16.16%,COMPARATIVE,net_income: -$108.7M (COMPARATIVE) / equity: $672.4M (COMPARATIVE)
+UPST,0001647639,2023,2023-12-31,efficiency,asset_turnover,0.25460413464875314,0.25x,COMPARATIVE,revenue: $513.6M (COMPARATIVE) / assets: $2.02B (COMPARATIVE)
+UPST,0001647639,2023,2023-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2023,2023-12-31,leverage,debt_to_equity,1.6376763916544022,1.64x,FALLBACK,total_debt: $1.04B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $635.3M (COMPARATIVE)
+UPST,0001647639,2023,2023-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2023,2023-12-31,leverage,interest_coverage,-7.3515504098125755,-7.35x,OK,ebit: -$256.5M (COMPARATIVE) / interest_expense: $34.9M (OK)
+UPST,0001647639,2023,2023-12-31,profitability,net_margin,-0.46758132416339215,-46.76%,COMPARATIVE,net_income: -$240.1M (COMPARATIVE) / revenue: $513.6M (COMPARATIVE)
+UPST,0001647639,2023,2023-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2023,2023-12-31,efficiency,receivables_turnover,0.44409912375595917,0.44x,FALLBACK,revenue: $513.6M (COMPARATIVE) / receivables: $1.16B (FALLBACK_NotesReceivableNet)
+UPST,0001647639,2023,2023-12-31,profitability,roa,-0.1190481384165386,-11.90%,COMPARATIVE,net_income: -$240.1M (COMPARATIVE) / assets: $2.02B (COMPARATIVE)
+UPST,0001647639,2023,2023-12-31,profitability,roe,-0.37797908091389176,-37.80%,COMPARATIVE,net_income: -$240.1M (COMPARATIVE) / equity: $635.3M (COMPARATIVE)
+UPST,0001647639,2024,2024-12-31,efficiency,asset_turnover,0.2689223889904257,0.27x,COMPARATIVE,revenue: $636.5M (COMPARATIVE) / assets: $2.37B (COMPARATIVE)
+UPST,0001647639,2024,2024-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2024,2024-12-31,leverage,debt_to_equity,2.2143527189688226,2.21x,FALLBACK,total_debt: $1.40B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $633.2M (COMPARATIVE)
+UPST,0001647639,2024,2024-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2024,2024-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+UPST,0001647639,2024,2024-12-31,profitability,net_margin,-0.2020036824774401,-20.20%,COMPARATIVE,net_income: -$128.6M (COMPARATIVE) / revenue: $636.5M (COMPARATIVE)
+UPST,0001647639,2024,2024-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2024,2024-12-31,efficiency,receivables_turnover,0.7894392189546374,0.79x,FALLBACK,revenue: $636.5M (COMPARATIVE) / receivables: $806.3M (FALLBACK_NotesReceivableNet)
+UPST,0001647639,2024,2024-12-31,profitability,roa,-0.05432331287669659,-5.43%,COMPARATIVE,net_income: -$128.6M (COMPARATIVE) / assets: $2.37B (COMPARATIVE)
+UPST,0001647639,2024,2024-12-31,profitability,roe,-0.20305960980262722,-20.31%,COMPARATIVE,net_income: -$128.6M (COMPARATIVE) / equity: $633.2M (COMPARATIVE)
+UPST,0001647639,2025,2025-12-31,efficiency,asset_turnover,0.35089930264336655,0.35x,OK,revenue: $1.04B (OK) / assets: $2.97B (OK)
+UPST,0001647639,2025,2025-12-31,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2025,2025-12-31,leverage,debt_to_equity,2.2898230503933954,2.29x,FALLBACK,total_debt: $1.83B (FALLBACK_DebtLongtermAndShorttermCombinedAmount) / equity: $798.8M (OK)
+UPST,0001647639,2025,2025-12-31,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2025,2025-12-31,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+UPST,0001647639,2025,2025-12-31,profitability,net_margin,0.05134898745709422,5.13%,OK,net_income: $53.6M (OK) / revenue: $1.04B (OK)
+UPST,0001647639,2025,2025-12-31,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2025,2025-12-31,efficiency,receivables_turnover,1.0602355182864898,1.06x,FALLBACK,revenue: $1.04B (OK) / receivables: $984.6M (FALLBACK_NotesReceivableNet)
+UPST,0001647639,2025,2025-12-31,profitability,roa,0.018018323890137338,1.80%,OK,net_income: $53.6M (OK) / assets: $2.97B (OK)
+UPST,0001647639,2025,2025-12-31,profitability,roe,0.06710064282718778,6.71%,OK,net_income: $53.6M (OK) / equity: $798.8M (OK)
+UPST,0001647639,2026,,efficiency,asset_turnover,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+UPST,0001647639,2026,,liquidity,current_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2026,,leverage,debt_to_equity,,N/A — missing debt data,MISSING_DATA,Total debt is missing.
+UPST,0001647639,2026,,profitability,gross_margin,,N/A — no COGS concept for lenders,NOT_APPLICABLE,Consumer lenders do not report Cost of Goods Sold per METHODOLOGY.md.
+UPST,0001647639,2026,,leverage,interest_coverage,,N/A — missing interest expense,MISSING_DATA,Interest expense is missing.
+UPST,0001647639,2026,,profitability,net_margin,,N/A — missing revenue,MISSING_DATA,Revenue is missing.
+UPST,0001647639,2026,,liquidity,quick_ratio,,N/A — lenders don't classify current/non-current assets,NOT_APPLICABLE,Consumer lenders do not report classified balance sheets per METHODOLOGY.md.
+UPST,0001647639,2026,,efficiency,receivables_turnover,,N/A — missing receivables,MISSING_DATA,Receivables line item is missing.
+UPST,0001647639,2026,,profitability,roa,,N/A — missing assets,MISSING_DATA,Total assets is missing.
+UPST,0001647639,2026,,profitability,roe,,N/A — missing equity,MISSING_DATA,Shareholders equity is missing.

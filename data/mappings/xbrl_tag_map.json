@@ -1,0 +1,145 @@
+{
+  "_comment": "XBRL tag mapping for the Automated Equity Research Desk pipeline.",
+  "_doc": "Each canonical line item maps to a priority-ordered list of us-gaap XBRL tags. The normalizer tries tags in order and stops at the first one that returns a value. If none match, the field is flagged MISSING_TAG.",
+  "_version": "1.0",
+  "_last_updated": "2026-09-13",
+  "_companies": ["AFRM", "SEZL", "UPST", "SOFI", "LC", "PGY", "OPRT", "OMF", "ENVA"],
+
+  "revenue": {
+    "_notes": "Broadest revenue concept available (interest + fee income). Standard tag is Revenues; fallbacks handle contract fee tags and specialized net interest/fee income concepts.",
+    "tags": [
+      "Revenues",
+      "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "InterestAndFeeIncome",
+      "InterestAndDividendIncomeOperating",
+      "NetRevenues"
+    ]
+  },
+
+  "net_income": {
+    "_notes": "Standard tag. Prefer NetIncomeLoss (includes minority interest); fall back to NetIncomeLossAvailableToCommonStockholdersBasic if needed.",
+    "tags": [
+      "NetIncomeLoss",
+      "NetIncomeLossAvailableToCommonStockholdersBasic",
+      "ProfitLoss"
+    ]
+  },
+
+  "total_assets": {
+    "_notes": "Standard balance sheet tag. Present for all filers.",
+    "tags": [
+      "Assets"
+    ]
+  },
+
+  "total_liabilities": {
+    "_notes": "Standard balance sheet tag.",
+    "tags": [
+      "Liabilities",
+      "LiabilitiesAndStockholdersEquity"
+    ]
+  },
+
+  "shareholders_equity": {
+    "_notes": "Prefer total equity. Some filers use StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest when there are minority interests.",
+    "tags": [
+      "StockholdersEquity",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    ]
+  },
+
+  "current_assets": {
+    "_notes": "Consumer lenders often lack a clear current/non-current split on the balance sheet. Flag MISSING_TAG if absent.",
+    "tags": [
+      "AssetsCurrent"
+    ]
+  },
+
+  "current_liabilities": {
+    "_notes": "Same issue as current_assets — may be absent for bank/lending filers.",
+    "tags": [
+      "LiabilitiesCurrent"
+    ]
+  },
+
+  "receivables": {
+    "_notes": "This is the core earning asset for consumer lenders. Tags vary significantly: AFRM uses NotesReceivableNet for held-for-investment loans; OMF uses LoansAndLeasesReceivableNetReportedAmount. We cascade through all reasonable tags.",
+    "tags": [
+      "LoansAndLeasesReceivableNetReportedAmount",
+      "NotesReceivableNet",
+      "FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss",
+      "AccountsReceivableNet",
+      "ReceivablesNetCurrent",
+      "FinancingReceivableAfterAllowanceForCreditLoss"
+    ]
+  },
+
+  "operating_cash_flow": {
+    "_notes": "Standard cash flow statement tag. Critical for accruals ratio calculation.",
+    "tags": [
+      "NetCashProvidedByUsedInOperatingActivities"
+    ]
+  },
+
+  "interest_expense": {
+    "_notes": "Needed for interest coverage ratio. May include funding cost on securitization facilities.",
+    "tags": [
+      "InterestExpense",
+      "InterestExpenseDebt",
+      "InterestAndDebtExpense",
+      "InterestExpenseBorrowings",
+      "InterestAndFeeExpense",
+      "FinancingInterestExpense"
+    ]
+  },
+
+  "gross_profit": {
+    "_notes": "INTENTIONALLY may be absent for consumer lenders — no COGS concept. If missing, flag MISSING_TAG. Do NOT attempt to synthesize. The ratio engine will handle absent gross profit gracefully.",
+    "tags": [
+      "GrossProfit"
+    ]
+  },
+
+  "retained_earnings": {
+    "_notes": "Needed for Altman Z-Score (RE/TA component). Most filers report this; accumulated deficit is negative.",
+    "tags": [
+      "RetainedEarningsAccumulatedDeficit",
+      "RetainedEarningsDeficit"
+    ]
+  },
+
+  "total_debt": {
+    "_notes": "Aggregate borrowings. Consumer lenders often have complex funding stacks (warehouse lines, ABS notes, corporate debt). LongTermDebt is the closest standard tag; fallbacks handle warehouse/credit facilities and compound debt stacks.",
+    "tags": [
+      "LongTermDebt",
+      "LongTermDebtAndCapitalLeaseObligations",
+      "DebtAndCapitalLeaseObligations",
+      "DebtLongtermAndShorttermCombinedAmount",
+      "SecuredDebt+WarehouseAgreementBorrowings",
+      "SecuredLongTermDebt+LongTermLineOfCredit+LongTermDebtCurrent",
+      "LinesOfCreditCurrent",
+      "NotesPayable",
+      "SeniorNotes"
+    ]
+  },
+
+  "ebit": {
+    "_notes": "Needed for Altman Z-Score (EBIT/TA). No direct tag — computed in ratio engine as NetIncomeLoss + IncomeTaxExpenseBenefit + InterestExpense. Stored as COMPUTED in source_tag.",
+    "tags": [
+      "OperatingIncomeLoss"
+    ]
+  },
+
+  "income_tax_expense": {
+    "_notes": "Used to compute EBIT when OperatingIncomeLoss is absent.",
+    "tags": [
+      "IncomeTaxExpenseBenefit"
+    ]
+  },
+
+  "working_capital": {
+    "_notes": "Computed as current_assets - current_liabilities in the ratio engine. Not pulled directly from EDGAR.",
+    "tags": []
+  }
+}
