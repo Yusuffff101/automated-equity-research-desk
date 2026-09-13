@@ -75,6 +75,13 @@ QUERY_METADATA = [
         "technique": "Pivot CTE comparing Net Income against CFO and computing non-cash accruals magnitude",
         "limit": 10,
     },
+    {
+        "file": "08_memo_reconciliation.sql",
+        "title": "Query 8: Investment Memo Longitudinal Reconciliation & Data Audit",
+        "question": "How do the fundamental, leverage, and forensic metrics cited in the UPST institutional investment memo reconcile against canonical database truth?",
+        "technique": "Multi-CTE join linking `financials`, `ratios`, `anomalies`, and `market_data` for audit verification",
+        "limit": None,
+    },
 ]
 
 
@@ -88,7 +95,8 @@ def run_showcase() -> None:
     readme_content = [
         "# 🏛️ SQL Analytics Showcase: Automated Equity Research Desk",
         "",
-        "This directory showcases **7 production analytical SQL queries** executed directly against the local SQLite warehouse ([`data/normalized/financials.db`](../data/normalized/financials.db)).",
+        "This directory showcases **8 production analytical SQL queries** executed directly against the local SQLite warehouse ([`data/normalized/financials.db`](../data/normalized/financials.db)).",
+
         "",
         "Rather than trivial `SELECT *` filtering, each query addresses a specific fundamental research question using advanced SQL techniques: **window functions (`LAG`, `LEAD`, `DENSE_RANK`)**, **multi-table Common Table Expressions (CTEs)**, **conditional aggregation**, and **cross-table JOINs**.",
         "",

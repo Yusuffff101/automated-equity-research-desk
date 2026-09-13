@@ -1,6 +1,6 @@
 # 🏛️ SQL Analytics Showcase: Automated Equity Research Desk
 
-This directory showcases **7 production analytical SQL queries** executed directly against the local SQLite warehouse ([`data/normalized/financials.db`](../data/normalized/financials.db)).
+This directory showcases **8 production analytical SQL queries** executed directly against the local SQLite warehouse ([`data/normalized/financials.db`](../data/normalized/financials.db)).
 
 Rather than trivial `SELECT *` filtering, each query addresses a specific fundamental research question using advanced SQL techniques: **window functions (`LAG`, `LEAD`, `DENSE_RANK`)**, **multi-table Common Table Expressions (CTEs)**, **conditional aggregation**, and **cross-table JOINs**.
 
@@ -17,6 +17,7 @@ Rather than trivial `SELECT *` filtering, each query addresses a specific fundam
 | **5** | [`05_data_quality_audit.sql`](./05_data_quality_audit.sql) | Query 5: SEC EDGAR Data Quality & 10-K/A Restatement Audit | Conditional aggregation COUNT(CASE WHEN ...) computing restatement percentages |
 | **6** | [`06_relative_valuation_multiples.sql`](./06_relative_valuation_multiples.sql) | Query 6: Cross-Sectional Relative Valuation Multiples (P/S, P/B, P/E) | Multi-table JOIN between `market_data` and pivot CTE of `financials` |
 | **7** | [`07_accruals_earnings_decoupling.sql`](./07_accruals_earnings_decoupling.sql) | Query 7: Earnings Decoupling & Operating Cash Burn Audit | Pivot CTE comparing Net Income against CFO and computing non-cash accruals magnitude |
+| **8** | [`08_memo_reconciliation.sql`](./08_memo_reconciliation.sql) | Query 8: Investment Memo Longitudinal Reconciliation & Data Audit | Multi-CTE join linking `financials`, `ratios`, `anomalies`, and `market_data` for audit verification |
 
 ---
 
@@ -567,5 +568,99 @@ ORDER BY non_cash_accruals_m DESC;
 | SOFI     |       2021 |         -483.9 |                 -1350.2 |                 866.3 |                 0.094 | CASH BURN / STRUCTURAL LOSS      |
 | AFRM     |       2026 |         1929.8 |                  1231   |                 698.8 |                 0.044 | NORMAL WORKING CAPITAL ACCRUAL   |
 | UPST     |       2022 |         -108.7 |                  -657.9 |                 549.2 |                 0.284 | CASH BURN / STRUCTURAL LOSS      |
+
+---
+
+## Query 8: Investment Memo Longitudinal Reconciliation & Data Audit
+
+**File:** [`sql/08_memo_reconciliation.sql`](./08_memo_reconciliation.sql)  
+**Analytical Objective:** How do the fundamental, leverage, and forensic metrics cited in the UPST institutional investment memo reconcile against canonical database truth?  
+**SQL Features:** `Multi-CTE join linking `financials`, `ratios`, `anomalies`, and `market_data` for audit verification`  
+
+### SQL Implementation
+```sql
+-- 08_memo_reconciliation.sql
+-- Automated Equity Research Desk | Verification & Data Integrity Suite
+-- 
+-- ANALYTICAL OBJECTIVE:
+-- Reconcile every fundamental, ratio, anomaly score, and valuation metric
+-- cited in the UPST Investment Memo against the canonical financials.db database.
+-- Surfaces any variance between reported memo claims and database truth.
+
+WITH fin_piv AS (
+    SELECT 
+        ticker,
+        cal_year,
+        MAX(CASE WHEN line_item = 'revenue' THEN value END) AS revenue,
+        MAX(CASE WHEN line_item = 'net_income' THEN value END) AS net_income,
+        MAX(CASE WHEN line_item = 'operating_cash_flow' THEN value END) AS operating_cash_flow,
+        MAX(CASE WHEN line_item = 'total_debt' THEN value END) AS total_debt,
+        MAX(CASE WHEN line_item = 'total_liabilities' THEN value END) AS total_liabilities,
+        MAX(CASE WHEN line_item = 'shareholders_equity' THEN value END) AS shareholders_equity,
+        MAX(CASE WHEN line_item = 'total_assets' THEN value END) AS total_assets,
+        MAX(CASE WHEN line_item = 'ebit' THEN value END) AS ebit,
+        MAX(CASE WHEN line_item = 'receivables' THEN value END) AS receivables
+    FROM financials
+    WHERE ticker = 'UPST'
+    GROUP BY ticker, cal_year
+),
+rat_piv AS (
+    SELECT
+        ticker,
+        cal_year,
+        MAX(CASE WHEN ratio_name = 'debt_to_equity' THEN value END) AS debt_to_equity,
+        MAX(CASE WHEN ratio_name = 'roe' THEN value END) AS roe,
+        MAX(CASE WHEN ratio_name = 'roa' THEN value END) AS roa,
+        MAX(CASE WHEN ratio_name = 'interest_coverage' THEN value END) AS interest_coverage
+    FROM ratios
+    WHERE ticker = 'UPST'
+    GROUP BY ticker, cal_year
+),
+anom_piv AS (
+    SELECT
+        ticker,
+        cal_year,
+        MAX(CASE WHEN anomaly_name = 'adapted_altman_z_score' THEN score_value END) AS altman_z,
+        MAX(CASE WHEN anomaly_name = 'adapted_beneish_m_score' THEN score_value END) AS beneish_m,
+        MAX(CASE WHEN anomaly_name = 'accruals_ratio' THEN score_value END) AS accruals_ratio,
+        MAX(CASE WHEN anomaly_name = 'growth_divergence' THEN score_value END) AS growth_divergence
+    FROM anomalies
+    WHERE ticker = 'UPST'
+    GROUP BY ticker, cal_year
+)
+SELECT
+    f.cal_year,
+    ROUND(f.revenue / 1e6, 2) AS revenue_m,
+    ROUND(f.net_income / 1e6, 2) AS net_income_m,
+    ROUND(f.operating_cash_flow / 1e6, 2) AS cfo_m,
+    ROUND(f.total_debt / 1e6, 2) AS total_debt_m,
+    ROUND(f.total_liabilities / 1e6, 2) AS total_liabilities_m,
+    ROUND(f.shareholders_equity / 1e6, 2) AS equity_m,
+    ROUND(r.debt_to_equity, 2) AS debt_to_equity,
+    ROUND(r.roe * 100.0, 2) AS roe_pct,
+    ROUND(r.roa * 100.0, 2) AS roa_pct,
+    ROUND(a.accruals_ratio, 3) AS accruals_ratio,
+    ROUND(a.altman_z, 2) AS altman_z,
+    ROUND(a.beneish_m, 2) AS beneish_m,
+    ROUND(a.growth_divergence * 100.0, 1) AS divergence_pct,
+    ROUND(m.market_cap / 1e9, 2) AS market_cap_b,
+    ROUND(m.close_price, 2) AS close_price
+FROM fin_piv f
+LEFT JOIN rat_piv r ON f.ticker = r.ticker AND f.cal_year = r.cal_year
+LEFT JOIN anom_piv a ON f.ticker = a.ticker AND f.cal_year = a.cal_year
+LEFT JOIN market_data m ON f.ticker = m.ticker AND f.cal_year = m.cal_year
+WHERE f.cal_year BETWEEN 2021 AND 2025
+ORDER BY f.cal_year;
+```
+
+### Query Results (All 5 Rows)
+
+|   cal_year |   revenue_m |   net_income_m |   cfo_m |   total_debt_m |   total_liabilities_m |   equity_m |   debt_to_equity |   roe_pct |   roa_pct |   accruals_ratio |   altman_z |   beneish_m |   divergence_pct |   market_cap_b |   close_price |
+|-----------:|------------:|---------------:|--------:|---------------:|----------------------:|-----------:|-----------------:|----------:|----------:|-----------------:|-----------:|------------:|-----------------:|---------------:|--------------:|
+|       2021 |      848.59 |         135.44 |  168.35 |         695.43 |               1013.38 |     807.08 |             0.86 |     16.78 |      7.44 |           -0.018 |       8.51 |      nan    |            nan   |          13.06 |        155.43 |
+|       2022 |      842.44 |        -108.67 | -657.86 |         986.39 |               1263.62 |     672.44 |             1.47 |    -16.16 |     -5.61 |            0.284 |       0.72 |        1.28 |            300.9 |           1.08 |         13.22 |
+|       2023 |      513.56 |        -240.13 | -111.71 |        1040.42 |               1381.8  |     635.31 |             1.64 |    -37.8  |    -11.9  |           -0.064 |       1.39 |       -2.44 |             53.5 |           3.53 |         40.86 |
+|       2024 |      636.53 |        -128.58 |  186.33 |        1402.17 |               1733.74 |     633.22 |             2.21 |    -20.31 |     -5.43 |           -0.133 |       2.24 |       -3.37 |            -54.2 |           5.93 |         63.32 |
+|       2025 |     1043.86 |          53.6  | -147.73 |        1829.15 |               2175.99 |     798.82 |             2.29 |      6.71 |      1.8  |            0.068 |       1.71 |       -2.04 |            -41.9 |           4.41 |         44.96 |
 
 ---

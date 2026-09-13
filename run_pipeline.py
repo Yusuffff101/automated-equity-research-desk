@@ -118,15 +118,17 @@ def main() -> None:
     print(f"    [+] Memo rendered to Markdown, HTML, and 2-Page PDF in {time.time() - t_stage:.2f}s\n")
 
     # -------------------------------------------------------------------------
-    # STAGE 5: SQL SHOWCASE & TABLEAU BI EXPORT LAYER
+    # STAGE 5: SQL SHOWCASE, RECONCILIATION & TABLEAU BI EXPORT LAYER
     # -------------------------------------------------------------------------
-    print(">>> [STAGE 5/5] Refreshing SQL Showcase & Tableau BI Export Layer...")
+    print(">>> [STAGE 5/5] Refreshing SQL Showcase, Tableau Export & Memo Audit...")
     t_stage = time.time()
     from sql.run_sql_showcase import run_showcase
     from data.exports.generate_tableau_export import build_tableau_export
+    from sql.reconcile_memo import run_reconciliation
     run_showcase()
     build_tableau_export()
-    print(f"    [+] Generated 7 SQL queries and data/exports/tableau_export.csv in {time.time() - t_stage:.2f}s\n")
+    run_reconciliation()
+    print(f"    [+] Executed 8 SQL queries, verified memo reconciliation, and exported tableau_export.csv in {time.time() - t_stage:.2f}s\n")
 
     elapsed = time.time() - t0
     print("=" * 80)
@@ -137,11 +139,12 @@ def main() -> None:
     print("    - Anomaly Store:       data/normalized/anomalies.csv")
     print("    - UPST Investment Note: memo/UPST_investment_memo.md")
     print("    - UPST PDF Memo:       memo/UPST_investment_memo.pdf (Strict 2-Page)")
-    print("    - SQL Showcase:        sql/README.md (7 Analytical Queries)")
+    print("    - SQL Showcase:        sql/README.md (8 Analytical Queries)")
     print("    - Tableau Export:      data/exports/tableau_export.csv (BI-Ready)")
     print("  To launch the interactive dashboard:")
     print("    streamlit run dashboard/app.py")
     print("=" * 80 + "\n")
+
 
 
 if __name__ == "__main__":

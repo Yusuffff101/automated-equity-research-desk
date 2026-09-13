@@ -93,7 +93,7 @@ Prior to drafting the investment memo, Step 0 audited Upstart's full 2021–2025
 - **The Bull Case Narrative**: Revenue surged +64.0% YoY to $1,043.9M, and reported GAAP Net Income inflected to $+53.6M (ROE +6.71%).
 - **The Balance Sheet Reality**:
   - Operating cash flow relapsed to **$-147.7M** (generating $+201.3M in non-cash accruals).
-  - Total debt climbed to an all-time peak of **$1.39B**.
+  - Total debt climbed to an all-time peak of **$1.83B** (debt-to-equity of 2.29x).
   - Cash liquidity dropped from $788M to $652M.
   - The **Adapted Altman Z-Score fell back into the Distress Zone at 1.71 (< 1.81)**.
 
@@ -110,7 +110,8 @@ Prior to drafting the investment memo, Step 0 audited Upstart's full 2021–2025
 | Ticker | Company Name | Market Cap ($B) | Revenue ($M) | Net Income ($M) | Shareholders' Equity ($M) | P/S | P/B | P/E | Solvency Risk Profile |
 |:-------|:-------------|:---------------:|:------------:|:---------------:|:-------------------------:|:---:|:---:|:---:|:----------------------|
 | **AFRM** | Affirm Holdings | $21.96B | $3,224.4M | $+52.2M | $3,069.0M | 6.81x | 7.15x | 420.7x | Distress Zone ($Z = 1.65$) |
-| **ENVA** | Enova International | $3.94B | $3,151.7M | $+308.4M | $1,336.7M | 1.25x | 2.95x | 12.8x | Distress Zone ($Z = 1.62$) |
+| **ENVA** | Enova International | $3.94B | $3,151.7M | $+308.4M | $1,336.7M | 1.25x | 2.95x | 12.8x | Distress Zone ($Z = 1.77$) |
+
 | **LC**   | LendingClub | $2.22B | $961.5M | $+135.7M | $1,500.4M | 2.31x | 1.48x | 16.4x | Distress Zone ($Z = 0.34$) |
 | **OMF**  | OneMain Holdings | $8.00B | $5,455.0M | $+783.0M | $3,401.0M | 1.47x | 2.35x | 10.2x | Distress Zone ($Z = 0.84$) |
 | **OPRT** | Oportun Financial | $0.24B | $956.7M | $+25.2M | $390.1M | 0.25x | 0.61x | 9.4x | Distress Zone ($Z = 0.56$) |

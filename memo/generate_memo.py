@@ -36,7 +36,7 @@ MEMO_MARKDOWN_CONTENT = """# EQUITY RESEARCH INSTITUTIONAL NOTE
 
 ## 1. Executive Investment Thesis
 
-**We initiate coverage on Upstart Holdings, Inc. (NASDAQ: UPST) with an AVOID / HIGH RISK rating.** While Upstart's topline re-accelerated to $1,043.9M (+64.0% YoY) and reported GAAP net income inflected to $+53.6M (ROE +6.71%) in FY2025, the underlying balance sheet has relapsed into financial fragility: operating cash flow flipped negative to **$-147.7M** (creating $+201.3M in non-cash accruals), total debt reached an all-time high of **$1.39B**, and the **Adapted Altman Z-Score slipped back into the Distress Zone at 1.71 (< 1.81)**. Trading at an extreme valuation of **82.3x P/E** and **4.22x P/S** (an 83% premium to the peer median), the equity market is pricing UPST as a capital-light software platform rather than a balance-sheet-constrained lender vulnerable to liquidity and credit headwinds.
+**We initiate coverage on Upstart Holdings, Inc. (NASDAQ: UPST) with an AVOID / HIGH RISK rating.** While Upstart's topline re-accelerated to $1,043.9M (+64.0% YoY) and reported GAAP net income inflected to $+53.6M (ROE +6.71%) in FY2025, the underlying balance sheet has relapsed into financial fragility: operating cash flow flipped negative to **$-147.7M** (creating $+201.3M in non-cash accruals), total debt reached an all-time high of **$1.83B** (debt-to-equity of 2.29x), and the **Adapted Altman Z-Score slipped back into the Distress Zone at 1.71 (< 1.81)**. Trading at an extreme valuation of **82.3x P/E** and **4.22x P/S** (an 83% premium to the peer median), the equity market is pricing UPST as a capital-light software platform rather than a balance-sheet-constrained lender vulnerable to liquidity and credit headwinds.
 
 ---
 
@@ -47,23 +47,23 @@ Our automated pipeline evaluated Upstart's complete longitudinal trajectory (FY2
 ### Upstart Holdings (UPST) — Historical Trajectory & Forensic Model Audit
 | Metric / Indicator | FY2021 (Peak Bubble) | FY2022 (Rate Shock) | FY2023 (Trough) | FY2024 (Offloading) | FY2025 (Re-acceleration) | Forensic Signal & Sector Interpretation |
 |:-------------------|:--------------------:|:-------------------:|:---------------:|:-------------------:|:------------------------:|:----------------------------------------|
-| **Revenue ($M)** | $848.6M | $842.0M (-0.7%) | $513.6M (-39.0%) | $636.5M (+23.9%) | **$1,043.9M (+64.0%)** | Topline recovered beyond 2021 levels. |
+| **Revenue ($M)** | $848.6M | $842.4M (-0.7%) | $513.6M (-39.0%) | $636.5M (+23.9%) | **$1,043.9M (+64.0%)** | Topline recovered beyond 2021 levels. |
 | **GAAP Net Income ($M)** | $+135.4M | $-108.7M | $-240.1M | $-128.6M | **$+53.6M** | First profitable year since 2021. |
 | **Operating Cash Flow ($M)** | $+168.4M | **$-657.9M** | $-111.7M | $+186.3M | **$-147.7M** | **RELAPSED NEGATIVE**: GAAP profit unbacked by cash. |
 | **Accruals Ratio (TATA)** | -0.018 | **+0.284** | -0.064 | -0.133 | **+0.068** | $+201.3M non-cash accruals (+6.8% of assets). |
-| **Total Debt ($M)** | $868.5M | $1,029.0M | $1,059.2M | $1,154.5M | **$1,385.4M** | All-time high leverage ($1.39B total debt). |
-| **Total Liabilities ($M)** | $1,013.8M | $1,260.4M | $1,377.9M | $1,733.9M | **$2,175.7M** | Liabilities expanded +25.5% YoY in FY25. |
-| **Shareholders' Equity ($M)**| $807.4M | $678.9M | $638.1M | $633.2M | **$798.8M** | Dilution & stock comp rebuilt equity buffer. |
-| **Interest Coverage** | +14.28x | -10.50x | -7.35x | -2.03x | **+1.26x** | Thin safety buffer; down from 14.3x in 2021. |
+| **Total Debt ($M)** | $695.4M | $986.4M | $1,040.4M | $1,402.2M | **$1,829.1M** | All-time high leverage ($1.83B total debt; D/E 2.29x). |
+| **Total Liabilities ($M)** | $1,013.4M | $1,263.6M | $1,381.8M | $1,733.7M | **$2,176.0M** | Liabilities expanded +25.5% YoY in FY25. |
+| **Shareholders' Equity ($M)**| $807.1M | $672.4M | $635.3M | $633.2M | **$798.8M** | Dilution & stock comp rebuilt equity buffer. |
+| **Interest Coverage** | +43.03x | -10.50x | -7.35x | N/A | **N/A** | Vulnerable buffer; interest expense omitted on 10-K face in 2024-25. |
 | **Return on Equity (ROE)** | +16.78% | -16.16% | -37.80% | -20.31% | **+6.71%** | Positive accounting return on equity. |
-| **Return on Assets (ROA)** | +7.43% | -5.60% | -11.90% | -5.43% | **+1.80%** | Thin balance-sheet return on assets. |
+| **Return on Assets (ROA)** | +7.44% | -5.61% | -11.90% | -5.43% | **+1.80%** | Thin balance-sheet return on assets. |
 | **Growth Divergence** | N/A ($t_0$) | **+300.9%** | +53.5% | -54.2% | -41.9% | Normalized as revenue outpaced loan buildup. |
 | **Beneish M-Score (Adapted)**| N/A ($t_0$) | **+1.28 (ELEVATED)**| -2.44 | -3.37 | -2.04 (Low Risk) | 2022 flag captured $+300%$ receivables surge. |
 | **Altman Z-Score (Adapted)** | **8.51 (Safe)** | **0.72 (Distress)** | **1.39 (Distress)** | **2.24 (Grey)** | **1.71 (DISTRESS)** | **RELAPSED INTO DISTRESS ZONE (< 1.81)**. |
 
 1. **The 2022 Rate Shock Deconstructed**: When the Federal Reserve hiked interest rates in 2022, Upstart's loan buyers halted commitments. Net income collapsed to $-108.7M and operating cash flow burned **$-657.9M**. Loan receivables surged +300.2% (from $252M to $1,010M) as loans became trapped on Upstart's balance sheet, triggering our module's **Growth Divergence warning (+300.9%)**, an **Adapted Beneish M-Score of +1.28 (Elevated Risk)**, and plunging the Adapted Altman Z-Score to **0.72 (Distress Zone)**.
 2. **The 2024 False Dawn**: In FY2024, Upstart offloaded trapped inventory, driving receivables down -30.3% ($1,156M to $806M), producing $+186.3M in CFO and an Accruals Ratio of -0.133. This pushed the Adapted Altman Z-Score into the **Grey Zone at 2.24**.
-3. **The 2025 Relapse**: While FY2025 revenue surged +64.0% to $1,043.9M, Upstart again expanded balance sheet commitments: loan assets grew +22.1% to $985M, total debt rose to a record **$1,385.4M**, and CFO flipped back to **$-147.7M**. As a consequence, the **Adapted Altman Z-Score relapsed to 1.71 (Distress Zone)**.
+3. **The 2025 Relapse**: While FY2025 revenue surged +64.0% to $1,043.9M, Upstart again expanded balance sheet commitments: loan assets grew +22.1% to $985M, total debt rose to a record **$1,829.1M**, and CFO flipped back to **$-147.7M**. As a consequence, the **Adapted Altman Z-Score relapsed to 1.71 (Distress Zone)**.
 
 <div class="page-break"></div>
 
@@ -72,8 +72,8 @@ Our automated pipeline evaluated Upstart's complete longitudinal trajectory (FY2
 The Adapted Altman Z-Score demonstrates why equity investors are taking disproportionate downside risk:
 - **Cash Liquidity Squeeze ($X_1$)**: Cash & equivalents dropped from $788M (FY24) to $652M (FY25), reducing the Cash/TA liquidity buffer from 0.33 to 0.22.
 - **Accumulated Deficit Drag ($X_2$)**: Cumulative operating losses left Retained Earnings at **$-358M** (RE/TA = -0.12), depressing the baseline solvency score.
-- **Leverage Acceleration ($X_4$)**: Total liabilities expanded by **$441.8M (+25.5% YoY)** to $2.18B. Market capitalization fell from $5.93B to $4.41B, driving the equity cushion (MVE/TL) down from 3.42x to 2.03x.
-- **Tenuous Coverage**: Interest coverage of **+1.26x** (EBIT of $98.1M vs interest expense of $78.0M) provides minimal insulation against higher credit charge-offs or funding rate adjustments.
+- **Leverage Acceleration ($X_4$)**: Total liabilities expanded by **$442.3M (+25.5% YoY)** to $2.18B. Market capitalization fell from $5.93B to $4.41B, driving the equity cushion (MVE/TL) down from 3.42x to 2.03x.
+- **Tenuous Coverage**: Operating buffer remains razor-thin: FY2025 EBIT is only **$42.6M** (4.1% operating margin), while interest expense is omitted from the 10-K face as borrowings shifted to warehouse credit facilities. With **$1.83B in total debt** and operating cash burn of **$-147.7M**, Upstart lacks the operating cushion to absorb higher credit charge-offs or funding cost spikes.
 
 ---
 
@@ -85,7 +85,7 @@ We benchmarked Upstart against all 8 publicly traded peers in our fintech and sp
 | Ticker | Company Name | Market Cap ($B) | Revenue ($M) | Net Income ($M) | Shareholders' Equity ($M) | P/S Multiple | P/B Multiple | P/E Multiple | Solvency Profile (Z-Score) |
 |:-------|:-------------|:---------------:|:------------:|:---------------:|:-------------------------:|:------------:|:------------:|:------------:|:--------------------------:|
 | **AFRM** | Affirm Holdings | $21.96B | $3,224.4M | $+52.2M | $3,069.0M | 6.81x | 7.15x | 420.7x | Distress Zone (Z = 1.65) |
-| **ENVA** | Enova International | $3.94B | $3,151.7M | $+308.4M | $1,336.7M | 1.25x | 2.95x | 12.8x | Distress Zone (Z = 1.62) |
+| **ENVA** | Enova International | $3.94B | $3,151.7M | $+308.4M | $1,336.7M | 1.25x | 2.95x | 12.8x | Distress Zone (Z = 1.77) |
 | **LC**   | Happen Inc. (LendingClub) | $2.22B | $961.5M | $+135.7M | $1,500.4M | 2.31x | 1.48x | 16.4x | Distress Zone (Z = 0.34) |
 | **OMF**  | OneMain Holdings | $8.00B | $5,455.0M | $+783.0M | $3,401.0M | 1.47x | 2.35x | 10.2x | Distress Zone (Z = 0.84) |
 | **OPRT** | Oportun Financial | $0.24B | $956.7M | $+25.2M | $390.1M | 0.25x | 0.61x | 9.4x | Distress Zone (Z = 0.56) |
@@ -104,9 +104,10 @@ We benchmarked Upstart against all 8 publicly traded peers in our fintech and sp
 ## 5. Key Catalysts & Investment Risks
 
 ### Downside Risks (Supporting AVOID Call):
-1. **Balance-Sheet Capacity Ceiling**: With total debt at $1.39B and operating cash flow negative ($-147.7M), Upstart cannot fund origination growth internally. Any hesitation among institutional ABS partners will force originations back onto the balance sheet, triggering a repeat of the 2022 inventory blowup.
+1. **Balance-Sheet Capacity Ceiling**: With total debt at $1.83B (D/E of 2.29x) and operating cash flow negative ($-147.7M), Upstart cannot fund origination growth internally. Any hesitation among institutional ABS partners will force originations back onto the balance sheet, triggering a repeat of the 2022 inventory blowup.
 2. **Multiple Compression Threat**: If the market re-rates UPST from an "AI platform" (82x P/E) toward high-growth profitable fintech peers like Sezzle (16.7x P/E) or Pagaya (20.9x P/E), the stock faces **60% to 75% downside re-rating risk**.
-3. **Credit Cycle Reversal**: Interest coverage of +1.26x leaves zero cushion for rising net charge-offs or credit provision adjustments under CECL accounting.
+3. **Credit Cycle Reversal**: Razor-thin operating profit ($42.6M EBIT) and recurring cash burn ($-147.7M CFO) leave zero cushion for rising net charge-offs or credit provision adjustments under CECL accounting.
+
 
 ### Upside Risks (What Would Invalidate Our Thesis):
 1. **Committed Capital Acceleration**: Long-term, non-call institutional co-investment agreements exceeding 70% of total originations that eliminate balance sheet credit risk.
