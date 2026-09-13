@@ -6,22 +6,29 @@
 [![Research Memo](https://img.shields.io/badge/memo-2--Page%20PDF-purple.svg)](memo/UPST_investment_memo.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An end-to-end, institutional equity research workstation that autonomously harvests SEC EDGAR filings, computes sector-adapted financial ratios, detects forensic accounting red flags, and renders a 2-page investment memo backed by interactive terminal analytics.
+A 9-company forensic financial analysis pipeline built on real SEC filings — data ingestion, anomaly detection, an interactive dashboard, and a defensible investment recommendation, end to end.
+
+🔗 **[Live Dashboard](https://automated-equity-research-desk.streamlit.app/)** · **[Tableau Public Dashboard](#)** · **[Investment Memo (PDF)](memo/UPST_investment_memo.pdf)** · **[SQL Query Showcase](sql/README.md)** · **[Methodology](METHODOLOGY.md)**
 
 ---
 
-## ⚡ 30-Second Overview (Why This Isn't a Kaggle Dashboard)
+## The Problem
 
-Most financial dashboards plot clean, pre-packaged CSVs from Kaggle or Yahoo Finance, computing textbook ratios that silently fail when applied to real companies. In the real world:
-- **Lenders have no Cost of Goods Sold (COGS)**: Standard gross margins are meaningless for fintech lenders, yet generic dashboards display them without question.
-- **Financial institutions lack classified balance sheets**: Current Assets and Current Liabilities are omitted from financial institution 10-Ks, breaking textbook Altman Z-Score and Beneish M-Score models.
-- **SEC disclosures are noisy and restated**: A prior period figure may be restated in a 10-K/A amendment or presented comparatively under different accounting standards (e.g., CECL provisioning or Fair Value Option shifts).
+Most "financial analysis" portfolio projects stop at a ratio dashboard built from a static, pre-cleaned CSV — which shows spreadsheet literacy, not analytical judgment. This project instead builds a full pipeline that pulls real, messy, inconsistently-tagged data directly from source (SEC EDGAR's API, not Kaggle), does the mechanical work of cleaning and normalizing it, flags genuine anomalies through statistical and forensic modeling, and produces a real, numbers-backed investment call — the way an actual research desk would.
 
-**This desk solves those problems.** It pulls 100% real XBRL company facts directly from the SEC EDGAR API across 9 public fintech and consumer lending peers (`AFRM`, `SEZL`, `UPST`, `SOFI`, `LC`, `PGY`, `OPRT`, `OMF`, `ENVA`) from FY2021 to FY2026. It applies mathematically adapted forensic models, surfaces genuine earnings-quality red flags, and publishes an institutional 2-page investment memo with an explicit, evidence-backed rating.
+It's a finance use case, but the underlying skills are general-purpose analytics work: sourcing and normalizing inconsistent real-world data, building a data-quality/provenance layer, detecting anomalies when standard models don't fit the data as-is, and communicating findings clearly enough for someone to act on.
 
 ---
 
-## 🏛️ Architecture & Approach
+## Approach
+
+- **Universe Selection**: 9 comparable public companies in BNPL and consumer/specialty lending fintech (`AFRM`, `SEZL`, `UPST`, `SOFI`, `LC`, `PGY`, `OPRT`, `OMF`, `ENVA`) — chosen specifically because this sub-sector has real accounting complexity (fair-value loan accounting, securitization, CECL provisioning) and a genuine history of red flags, rather than a "clean" sector where nothing interesting would surface.
+- **SEC EDGAR API Ingestion**: Data ingestion directly from SEC EDGAR's XBRL company-facts API, with a custom tag-mapping layer to reconcile inconsistent tagging across companies (e.g., lenders use different tags for debt, receivables, and interest expense depending on their funding structure).
+- **Data Quality & Provenance Layer**: A full data-quality/provenance system — every financial fact is tagged `OK`, `COMPARATIVE`, `RESTATED`, `FALLBACK`, `MISSING_TAG`, or `NOT_APPLICABLE`, so every downstream number is traceable back to how confidently it was sourced. This surfaced genuine findings on its own — see below.
+- **Financial Ratio Engine**: A ratio engine (profitability, leverage, liquidity, efficiency) with explicit guardrails: no silent division-by-zero, no fabricated ratios for line items a lender's business model doesn't have (e.g., gross margin, current ratio).
+- **Adapted Forensic Anomaly Detection**: An anomaly/forensic module using Beneish M-Score and Altman Z-Score — both explicitly adapted for financial institutions, since the textbook formulas assume a non-financial company's balance sheet (see [Methodology](METHODOLOGY.md) for exactly which terms were modified and why). Presenting an unmodified score as if it applied cleanly to lenders would have been analytically dishonest, so every adapted score is labeled as such everywhere it appears — in the code, the dashboard, and the memo.
+- **Automated Data-Integrity Reconciliation Check**: After catching a discrepancy between a drafted memo figure and the canonical database during development, I built a permanent script ([`sql/reconcile_memo.py`](sql/reconcile_memo.py)) that parses every number cited in the investment memo and verifies it against the live database on every pipeline run. It's now part of the standard build ([`run_pipeline.py`](run_pipeline.py)).
+- **Institutional Investment Memo**: A written investment memo on Upstart Holdings (`UPST`), structured like a real sell-side note — thesis, evidence, risks, valuation, and an explicit recommendation, with every claim traceable to a specific pipeline output.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -52,66 +59,27 @@ Most financial dashboards plot clean, pre-packaged CSVs from Kaggle or Yahoo Fin
 │  • Side-by-Side Peer Trajectories       │       │  • Strictly 2-Page Institutional Note   │
 │  • Extreme Outlier Axis Bounding        │       │  • UPST Initiation: AVOID / HIGH RISK   │
 │  • Explicit Visual Pre-IPO/Missing N/A  │       │  • Step 0 Longitudinal Trajectory Audit │
-│  • Executive Threat Matrix & Popovers   │       │  • Relative Multiples vs. 8 Peers       │
+│  • Executive Threat Matrix & Popovers   │       │  • Reconciled Trajectory vs. Live DB    │
 └─────────────────────────────────────────┘       └─────────────────────────────────────────┘
 ```
 
-### Why BNPL & Technology-Driven Specialty Lenders?
-We deliberately chose a sub-sector characterized by acute accounting complexity and credit-cycle volatility:
-1. **Originate-to-Distribute vs. Balance-Sheet Retention**: Companies like Upstart (`UPST`) and Pagaya (`PGY`) claim to be capital-light AI marketplaces, but interest rate shocks can instantly trap loans on their balance sheets.
-2. **Accounting Method Shifts**: Frequent transitions between Fair Value Option (FVO) accounting, CECL loss reserves, and securitization warehouse debt obscure true operating performance.
-3. **High Anomaly Density**: This sector produces authentic distress and earnings-quality signals—providing a rigorous proving ground for forensic algorithms.
+---
 
-| Ticker | Company | CIK | Core Business Model & Accounting Nuance |
-|:-------|:--------|:---:|:----------------------------------------|
-| **AFRM** | Affirm Holdings | 0001820953 | Pure-play BNPL; gain-on-sale accounting; June FYE normalized to calendar year. |
-| **SEZL** | Sezzle Inc. | 0001662991 | High-velocity BNPL; recent GAAP profitability; clean low-risk benchmark. |
-| **UPST** | Upstart Holdings | 0001647639 | AI lending marketplace; 2022 loan inventory blowup and 2025 cash flow relapse. |
-| **SOFI** | SoFi Technologies | 0001818874 | Diversified fintech with national bank charter; large CECL provisioning. |
-| **LC** | LendingClub Corp | 0001409970 | Marketplace pioneer turned digital bank; deposit-funded consumer credit. |
-| **PGY** | Pagaya Technologies | 0001883085 | AI securitization network; SEC 10-K/A restatement and severe Altman Z distress. |
-| **OPRT** | Oportun Financial | 0001538716 | Subprime lender; structural credit deterioration and debt renegotiation. |
-| **OMF** | OneMain Holdings | 0001584207 | Legacy branch/digital installment lender; mature high-yield comp anchor. |
-| **ENVA** | Enova International | 0001529864 | Online non-prime lender; extensive Fair Value Option (FVO) portfolio election. |
+## Headline Findings
+
+1. **Pagaya (`PGY`)**: 23 flagged restatements coincide directly with a 10-K/A amendment spanning three fiscal years — and with the company landing in the Altman Z-Score distress zone the same period.
+2. **Enova (`ENVA`)**: Silently shifted its receivables accounting to fair-value option treatment after 2019 — invisible unless you're checking which XBRL tag a company reports under year over year.
+3. **Upstart (`UPST`)**: 2025 "recovery" is bifurcated: GAAP net income turned positive for the first time since 2021 ($+53.6M), but operating cash flow relapsed negative ($-147.7M), total debt hit an all-time high ($1.83B; D/E 2.29x), and its Altman Z-Score slipped back into the distress zone (1.71) — while the market was pricing it at 82x earnings, a ~5x premium to peer median. **Recommendation: AVOID / HIGH RISK**.
+4. **Chronic Distress Runs**: Four companies (`LC`, `OPRT`, `SOFI`, `OMF`) show chronic multi-year runs in the distress zone rather than one-off cyclical dips — a materially different risk profile than a temporary downturn.
 
 ---
 
-## 🔍 Headline Forensic Discoveries
-
-### 1. Pagaya Technologies (`PGY`): 10-K/A Restatement Coinciding with Altman Z Distress
-- In FY2023, Pagaya filed a formal **10-K/A amendment** restating previously reported net income and equity values.
-- Our pipeline flagged PGY's restatement simultaneously with an **Adapted Altman Z-Score of 1.39 (deep in the Distress Zone < 1.81)**.
-- While PGY improved to Grey Zone ($Z = 1.87$) in FY2025, it maintains thin tangible equity ($480M) supporting over $1.3B in securitization liabilities.
-
-### 2. Enova International (`ENVA`): Fair Value Option (FVO) Masking Credit Loss Volatility
-- Enova shifted significant portions of its subprime loan portfolio to **Fair Value Option (FVO) accounting** under ASC 825.
-- Because FVO folds credit loss adjustments directly into "Change in Fair Value" rather than a discrete provision expense, standard credit allowance ratios show `MISSING_TAG`.
-- Our pipeline correctly isolated ENVA's structural high-charge-off model and tracked its equity multiple discount (12.8x P/E vs. peer median of 16.7x).
-
-### 3. Upstart Holdings (`UPST`): The 2025 "Turnaround" Is Bifurcated & Incomplete
-Prior to drafting the investment memo, Step 0 audited Upstart's full 2021–2025 trajectory:
-- **The Bull Case Narrative**: Revenue surged +64.0% YoY to $1,043.9M, and reported GAAP Net Income inflected to $+53.6M (ROE +6.71%).
-- **The Balance Sheet Reality**:
-  - Operating cash flow relapsed to **$-147.7M** (generating $+201.3M in non-cash accruals).
-  - Total debt climbed to an all-time peak of **$1.83B** (debt-to-equity of 2.29x).
-  - Cash liquidity dropped from $788M to $652M.
-  - The **Adapted Altman Z-Score fell back into the Distress Zone at 1.71 (< 1.81)**.
-
-### 4. Upstart Investment Thesis: AVOID / HIGH RISK (Valuation Stretch)
-- **Priced for AI Perfection**: UPST trades at **82.25x P/E** (nearly **5x the profitable peer median of 16.68x**), **4.22x P/S** (+83% premium), and **5.52x P/B** (+71% premium).
-- **The Mismatch**: Investors are paying an elite software multiple for a business sitting in the Altman Z Distress Zone with negative cash generation. If originations slow or warehouse lines tighten, UPST faces **60%–75% downside multiple re-rating risk**.
-
----
-
-## 📈 Relative Valuation Benchmark (FY2025 Multiples)
-
-*Computed from live market capitalization data against normalized SEC EDGAR financials (no DCF per PRD scope):*
+## 📈 Cross-Sectional Valuation Benchmark (FY2025)
 
 | Ticker | Company Name | Market Cap ($B) | Revenue ($M) | Net Income ($M) | Shareholders' Equity ($M) | P/S | P/B | P/E | Solvency Risk Profile |
 |:-------|:-------------|:---------------:|:------------:|:---------------:|:-------------------------:|:---:|:---:|:---:|:----------------------|
 | **AFRM** | Affirm Holdings | $21.96B | $3,224.4M | $+52.2M | $3,069.0M | 6.81x | 7.15x | 420.7x | Distress Zone ($Z = 1.65$) |
 | **ENVA** | Enova International | $3.94B | $3,151.7M | $+308.4M | $1,336.7M | 1.25x | 2.95x | 12.8x | Distress Zone ($Z = 1.77$) |
-
 | **LC**   | LendingClub | $2.22B | $961.5M | $+135.7M | $1,500.4M | 2.31x | 1.48x | 16.4x | Distress Zone ($Z = 0.34$) |
 | **OMF**  | OneMain Holdings | $8.00B | $5,455.0M | $+783.0M | $3,401.0M | 1.47x | 2.35x | 10.2x | Distress Zone ($Z = 0.84$) |
 | **OPRT** | Oportun Financial | $0.24B | $956.7M | $+25.2M | $390.1M | 0.25x | 0.61x | 9.4x | Distress Zone ($Z = 0.56$) |
@@ -123,60 +91,73 @@ Prior to drafting the investment memo, Step 0 audited Upstart's full 2021–2025
 
 ---
 
-## 🔗 Live Links & Artifacts
+## Tech Stack
 
-- **Live Streamlit Dashboard**: [https://automated-equity-research-desk.streamlit.app/](https://automated-equity-research-desk.streamlit.app/) *(or local `http://localhost:8501`)*
-- **UPST Investment Memo (PDF)**: [`memo/UPST_investment_memo.pdf`](memo/UPST_investment_memo.pdf) *(Strict 2-Page Institutional Note)*
-- **UPST Investment Memo (Markdown)**: [`memo/UPST_investment_memo.md`](memo/UPST_investment_memo.md)
-- **Spoken Walkthrough Script**: [`memo/walkthrough_script.md`](memo/walkthrough_script.md)
-- **Methodology & Model Adaptations**: [`METHODOLOGY.md`](METHODOLOGY.md)
+- **Data Sourcing & ETL**: Python (`requests`, `pandas`) · SEC EDGAR XBRL API · `yfinance` (market capitalization)
+- **Database & Storage**: SQLite (`data/normalized/financials.db`) · Tidy CSV exports
+- **SQL Analytics Showcase**: Production SQL (window functions `LAG`/`LEAD`/`DENSE_RANK`, multi-table CTEs, self-joins) in [`sql/`](sql/)
+- **Dashboards & BI**: Streamlit + Plotly (interactive app) · Tableau Public (denormalized BI layer in [`data/exports/`](data/exports/))
+- **Forensic Modeling**: Adapted Beneish M-Score · Adapted Altman Z-Score · Accruals (TATA) · Growth Divergence
+- **Document Generation**: Markdown $\rightarrow$ Headless Chromium/Edge (2-page institutional PDF memo)
 
 ---
 
-## 🚀 How to Run (Single-Command Reproducibility)
+## Repository Structure
 
-### 1. Prerequisites & Installation
+```
+├── ingestion/        # SEC EDGAR pull + XBRL tag normalization
+├── ratios/           # Ratio engine (profitability, leverage, efficiency)
+├── anomaly/          # Adapted Beneish M-Score, Altman Z-Score, accruals, growth divergence
+├── dashboard/        # Streamlit interactive application
+├── sql/              # Standalone analytical SQL queries + reconciliation check
+├── memo/             # Investment memo (Markdown + 2-Page PDF)
+├── data/
+│   ├── raw/          # Cached raw SEC EDGAR company facts (JSON)
+│   ├── normalized/   # Tidy SQLite DB (financials.db) + CSV exports
+│   └── exports/      # Tableau Public export + institutional data dictionary
+├── docs/PRD.md       # Original project specification
+└── METHODOLOGY.md    # Full documentation of every adaptation and design decision
+```
+
+---
+
+## How to Run
+
 ```bash
 # Clone the repository
 git clone https://github.com/Yusuffff101/automated-equity-research-desk.git
 cd automated-equity-research-desk
 
-# Create and activate Python virtual environment
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # macOS / Linux
-
 # Install dependencies
 pip install -r requirements.txt
-```
 
-### 2. Single-Command End-to-End Pipeline
-Run the entire analytical pipeline—from EDGAR normalization to ratio calculation, anomaly detection, and 2-page PDF memo generation:
-```bash
+# Run the full pipeline (single command)
 python run_pipeline.py
 ```
-*Executes in under 6 seconds using local SEC cache!*
 
-### 3. Launch the Interactive Dashboard
+Single command runs the full pipeline — ingestion, ratio calculation, anomaly detection, SQL showcase refresh, Tableau export, automated memo reconciliation check, and memo regeneration — end to end in under 6 seconds.
+
+To launch the interactive dashboard:
 ```bash
 streamlit run dashboard/app.py
 ```
-Open `http://localhost:8501` in your browser to explore the institutional terminal.
 
 ---
 
-## 🛡️ Data Authenticity Notice
+## A Note on the Data
 
-**All financial data in this repository is 100% authentic, unsimulated SEC EDGAR XBRL company facts.**
-- Harvested directly from SEC EDGAR's `/api/xbrl/companyfacts/` endpoint adhering to official SEC rate limits and declared User-Agent identification.
-- Covers 9 public reporting entities across 6 fiscal years (FY2021–FY2026).
-- Every tag, comparative value, and amendment is tracked with audit-trail provenance (`data_quality` flags: `OK`, `COMPARATIVE`, `FALLBACK`, `MISSING_TAG`, `RESTATED`).
+All financial data in this project is real, pulled live from SEC EDGAR's public API for actual SEC filers — not simulated, synthetic, or pre-cleaned. Market data is from Yahoo Finance. The only "fabricated" element is the intentional adaptation of two forensic scoring models to fit the financial-institution sector, and every adaptation is documented in [METHODOLOGY.md](METHODOLOGY.md).
 
 ---
 
-## 🔭 Future Work & Intentional Scope Boundaries
+## Future Work
 
-Per PRD section 1.2, several items were intentionally bounded to maintain high signal-to-noise on core earnings quality:
-1. **Intraday Streaming Data**: Fundamental equity research evaluates multi-year annual 10-K filings. High-frequency price feeds add latency without improving accounting red-flag detection.
-2. **Discounted Cash Flow (DCF) Modeling**: DCF models assume a distinct reinvestment rate and free cash flow to firm ($FCFF$). For balance-sheet lenders whose primary raw material is borrowed capital, DCFs produce meaningless enterprise values. Multiples and credit solvency models are the domain standard.
-3. **Multi-Sector Coverage**: The XBRL fallback maps and adapted Beneish/Altman formulas are specifically tailored to financial institutions and specialty lenders. Generalizing across non-financial manufacturing would dilute sector-specific forensic precision.
+Deliberately out of scope for this build, to keep it shippable:
+- **Live/real-time data refresh**: Current pull is a static snapshot; re-running the pipeline updates it.
+- **Full DCF modeling**: The memo uses a lightweight relative-valuation comparison instead (standard sell-side practice for lenders).
+- **Multi-sector coverage**: Tailored specifically to fintech and specialty consumer lending to maintain accounting precision.
+- **Predictive/ML modeling**: Kept as a separate, distinct project.
+
+---
+
+*Educational/portfolio research project based on public SEC filings. Not investment advice.*
